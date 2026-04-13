@@ -40,10 +40,18 @@ function togglePartners() {
 
 // MOBILE MENU TOGGLE
 
-document.getElementById("menuToggle")
-  .addEventListener("click", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-    document.getElementById("navbar")
-      .classList.toggle("active");
+  const toggleBtn =
+    document.getElementById("menuToggle");
+
+  const navbar =
+    document.getElementById("navbar");
+
+  toggleBtn.addEventListener("click", function () {
+
+    navbar.classList.toggle("active");
 
   });
+
+});

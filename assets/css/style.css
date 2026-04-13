@@ -685,6 +685,45 @@ html {
 
 /* MOBILE NAVIGATION */
 
+.menu-toggle {
+
+  display: none;
+
+  font-size: 26px;
+
+  cursor: pointer;
+
+}
+
+
+/* MOBILE NAVIGATION */
+
+.menu-toggle {
+
+  display: none;
+
+  font-size: 26px;
+
+  cursor: pointer;
+
+}
+
+
+/* MOBILE NAVIGATION */
+
+.menu-toggle {
+
+  display: none;
+
+  font-size: 26px;
+
+  cursor: pointer;
+
+}
+
+
+/* MOBILE NAVIGATION */
+
 @media (max-width: 768px) {
 
   nav {
@@ -693,7 +732,7 @@ html {
 
     top: 70px;
 
-    right: 0;
+    right: 20px;
 
     background: #2d6a4f;
 
@@ -711,7 +750,6 @@ html {
 
   }
 
-
   nav a {
 
     display: block;
@@ -721,7 +759,6 @@ html {
     margin: 0;
 
   }
-
 
   .menu-toggle {
 
@@ -738,3 +775,56 @@ html {
   }
 
 }
+
+/* 
+@media (max-width: 768px) {
+
+  nav {
+
+    position: absolute;
+
+    top: 70px;
+
+    right: 20px;
+
+    background: #2d6a4f;
+
+    width: 220px;
+
+    display: none;
+
+    flex-direction: column;
+
+    padding: 15px 0;
+
+    border-radius: 8px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+
+  }
+
+  nav a {
+
+    display: block;
+
+    padding: 12px 20px;
+
+    margin: 0;
+
+  }
+
+  .menu-toggle {
+
+    display: block;
+
+    color: white;
+
+  }
+
+  nav.active {
+
+    display: flex;
+
+  }
+
+} */
