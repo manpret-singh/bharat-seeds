@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-default-lang="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,193 +11,170 @@
 <body>
 
   <header>
-    <a href="index.html" class="logo-link">
-      <div class="logo">BHARAT SEEDS</div>
-    </a>
+  <a href="index.html" class="logo-link">
+    <div class="logo">BHARAT SEEDS</div>
+  </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <i class="fas fa-bars"></i>
-    </button>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <i class="fas fa-bars"></i>
+  </button>
 
-    <nav id="navbar">
-      <a href="products.html" data-en="Products" data-hi="उत्पाद" data-pa="ਉਤਪਾਦ">Products</a>
-      <a href="#contact" data-en="Contact Us" data-hi="संपर्क करें" data-pa="ਸੰਪਰਕ ਕਰੋ">Contact Us</a>
-
-      <div class="language-switcher" aria-label="Language switcher">
-        <button type="button" data-lang="en">EN</button>
-        <button type="button" data-lang="hi">हिंदी</button>
-        <button type="button" data-lang="pa">ਪੰਜਾਬੀ</button>
-      </div>
-    </nav>
-  </header>
+  <nav id="navbar">
+    <a href="products.html">Products</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+</header>
 
   <section class="section">
-    <h2 class="section-title" data-en="Products" data-hi="उत्पाद" data-pa="ਉਤਪਾਦ">Products</h2>
+    <h2 class="section-title">Products</h2>
 
     <div class="product-filter">
-      <button class="filter-btn active" data-category="all" data-en="All" data-hi="सभी" data-pa="ਸਭ">All</button>
-      <button class="filter-btn" data-category="leafy" data-en="Leafy Vegetables" data-hi="पत्तेदार सब्जियाँ" data-pa="ਪੱਤੇਦਾਰ ਸਬਜ਼ੀਆਂ">Leafy Vegetables</button>
-      <button class="filter-btn" data-category="solanaceous" data-en="Solanaceous Crops" data-hi="सोलनैशियस फसलें" data-pa="ਸੋਲਨੇਸ਼ੀਅਸ ਫਸਲਾਂ">Solanaceous Crops</button>
-      <button class="filter-btn" data-category="gourds" data-en="Gourds" data-hi="लौकी वर्ग की फसलें" data-pa="ਲੌਕੀ ਵਰਗ ਦੀਆਂ ਫਸਲਾਂ">Gourds</button>
-      <button class="filter-btn" data-category="cucurbits" data-en="Cucurbits" data-hi="कद्दूवर्गीय फसलें" data-pa="ਕੱਦੂਵਰਗੀ ਫਸਲਾਂ">Cucurbits</button>
-      <button class="filter-btn" data-category="pod" data-en="Pod Vegetables" data-hi="फलीदार सब्जियाँ" data-pa="ਫਲੀਦਾਰ ਸਬਜ਼ੀਆਂ">Pod Vegetables</button>
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="leafy">Leafy Vegetables</button>
+      <button class="filter-btn" data-category="solanaceous">Solanaceous Crops</button>
+      <button class="filter-btn" data-category="gourds">Gourds</button>
+      <button class="filter-btn" data-category="cucurbits">Cucurbits</button>
+      <button class="filter-btn" data-category="pod">Pod Vegetables</button>
     </div>
 
     <div class="products" id="productGrid">
       <div class="card product-item" data-category="leafy">
         <img src="assets/images/products/1.jpg" alt="Fenugreek">
-        <h3 data-en="Fenugreek" data-hi="मेथी" data-pa="ਮੇਥੀ">Fenugreek</h3>
-        <p data-en="Fast-growing leafy variety with strong aroma" data-hi="तेज़ी से बढ़ने वाली पत्तेदार किस्म, जिसमें तेज़ सुगंध होती है" data-pa="ਤੇਜ਼ੀ ਨਾਲ ਵਧਣ ਵਾਲੀ ਪੱਤੇਦਾਰ ਕਿਸਮ, ਜਿਸ ਵਿੱਚ ਮਜ਼ਬੂਤ ਖੁਸ਼ਬੂ ਹੁੰਦੀ ਹੈ">
-          Fast-growing leafy variety with strong aroma
-        </p>
+        <h3>Fenugreek</h3>
+        <p>Fast-growing leafy variety with strong aroma</p>
       </div>
 
       <div class="card product-item" data-category="leafy">
         <img src="assets/images/products/2.jpg" alt="Coriander">
-        <h3 data-en="Coriander" data-hi="धनिया" data-pa="ਧਨੀਆ">Coriander</h3>
-        <p data-en="High germination seeds for fresh green leaves" data-hi="ताज़ी हरी पत्तियों के लिए उच्च अंकुरण वाले बीज" data-pa="ਤਾਜ਼ੀਆਂ ਹਰੀਆਂ ਪੱਤੀਆਂ ਲਈ ਉੱਚ ਅੰਕੁਰਣ ਵਾਲੇ ਬੀਜ">
-          High germination seeds for fresh green leaves
-        </p>
+        <h3>Coriander</h3>
+        <p>High germination seeds for fresh green leaves</p>
       </div>
 
       <div class="card product-item" data-category="leafy">
         <img src="assets/images/products/3.jpg" alt="Amaranthus">
-        <h3 data-en="Amaranthus" data-hi="चौलाई" data-pa="ਚੌਲਾਈ">Amaranthus</h3>
-        <p data-en="Nutritious leafy vegetable with quick harvest" data-hi="पौष्टिक पत्तेदार सब्ज़ी, जल्दी कटाई के लिए उपयुक्त" data-pa="ਪੋਸ਼ਣ ਭਰਪੂਰ ਪੱਤੇਦਾਰ ਸਬਜ਼ੀ, ਜਲਦੀ ਕਟਾਈ ਲਈ ਉਚਿਤ">
-          Nutritious leafy vegetable with quick harvest
-        </p>
+        <h3>Amaranthus</h3>
+        <p>Nutritious leafy vegetable with quick harvest</p>
       </div>
 
       <div class="card product-item" data-category="leafy">
         <img src="assets/images/products/4.jpg" alt="Lettuce">
-        <h3 data-en="Lettuce" data-hi="लेट्यूस" data-pa="ਲੈਟਸ">Lettuce</h3>
-        <p data-en="Crisp leafy varieties suitable for salads" data-hi="सलाद के लिए उपयुक्त कुरकुरी पत्तेदार किस्में" data-pa="ਸਲਾਦ ਲਈ ਉਚਿਤ ਕਰਾਰੀ ਪੱਤੇਦਾਰ ਕਿਸਮਾਂ">
-          Crisp leafy varieties suitable for salads
-        </p>
+        <h3>Lettuce</h3>
+        <p>Crisp leafy varieties suitable for salads</p>
       </div>
 
       <div class="card product-item" data-category="solanaceous">
         <img src="assets/images/products/5.jpg" alt="Brinjal">
-        <h3 data-en="Brinjal" data-hi="बैंगन" data-pa="ਬੈਂਗਣ">Brinjal</h3>
-        <p data-en="High-yield hybrid varieties with uniform fruits" data-hi="समान आकार के फलों वाली उच्च उपज हाइब्रिड किस्में" data-pa="ਇਕਸਾਰ ਫਲਾਂ ਵਾਲੀਆਂ ਉੱਚ ਉਪਜ ਹਾਈਬ੍ਰਿਡ ਕਿਸਮਾਂ">
-          High-yield hybrid varieties with uniform fruits
-        </p>
+        <h3>Brinjal</h3>
+        <p>High-yield hybrid varieties with uniform fruits</p>
       </div>
 
       <div class="card product-item" data-category="solanaceous">
         <img src="assets/images/products/6.jpg" alt="Chilli">
-        <h3 data-en="Chilli" data-hi="मिर्च" data-pa="ਮਿਰਚ">Chilli</h3>
-        <p data-en="Disease-resistant varieties with strong yield" data-hi="रोग-प्रतिरोधी किस्में, मजबूत उपज के साथ" data-pa="ਬਿਮਾਰੀ-ਰੋਧੀ ਕਿਸਮਾਂ, ਮਜ਼ਬੂਤ ਉਪਜ ਨਾਲ">
-          Disease-resistant varieties with strong yield
-        </p>
+        <h3>Chilli</h3>
+        <p>Disease-resistant varieties with strong yield</p>
       </div>
 
       <div class="card product-item" data-category="solanaceous">
         <img src="assets/images/products/7.jpg" alt="Capsicum">
-        <h3 data-en="Capsicum" data-hi="शिमला मिर्च" data-pa="ਸ਼ਿਮਲਾ ਮਿਰਚ">Capsicum</h3>
-        <p data-en="Uniform fruit size with excellent shelf life" data-hi="समान आकार और अच्छी शेल्फ लाइफ वाली किस्में" data-pa="ਇਕਸਾਰ ਆਕਾਰ ਅਤੇ ਵਧੀਆ ਸ਼ੈਲਫ ਲਾਈਫ ਵਾਲੀਆਂ ਕਿਸਮਾਂ">
-          Uniform fruit size with excellent shelf life
-        </p>
+        <h3>Capsicum</h3>
+        <p>Uniform fruit size with excellent shelf life</p>
       </div>
 
       <div class="card product-item" data-category="pod">
         <img src="assets/images/products/8.jpg" alt="Okra">
-        <h3 data-en="Okra" data-hi="भिंडी" data-pa="ਭਿੰਡੀ">Okra</h3>
-        <p data-en="High-producing tender pods with strong plants" data-hi="मज़बूत पौधों के साथ उच्च उत्पादन देने वाली मुलायम फलियाँ" data-pa="ਮਜ਼ਬੂਤ ਪੌਦਿਆਂ ਨਾਲ ਉੱਚ ਉਤਪਾਦਨ ਦੇਣ ਵਾਲੀਆਂ ਨਰਮ ਫਲੀਆਂ">
-          High-producing tender pods with strong plants
-        </p>
+        <h3>Okra</h3>
+        <p>High-producing tender pods with strong plants</p>
       </div>
 
       <div class="card product-item" data-category="gourds">
         <img src="assets/images/products/9.jpg" alt="Bitter Gourd">
-        <h3 data-en="Bitter Gourd" data-hi="करेला" data-pa="ਕਰੇਲਾ">Bitter Gourd</h3>
-        <p data-en="Healthy vines with high fruit setting capacity" data-hi="मज़बूत बेलें और अधिक फल सेटिंग क्षमता" data-pa="ਮਜ਼ਬੂਤ ਬੇਲਾਂ ਅਤੇ ਵਧੀਆ ਫਲ ਸੈੱਟਿੰਗ ਸਮਰੱਥਾ">
-          Healthy vines with high fruit setting capacity
-        </p>
+        <h3>Bitter Gourd</h3>
+        <p>Healthy vines with high fruit setting capacity</p>
       </div>
 
       <div class="card product-item" data-category="gourds">
         <img src="assets/images/products/10.jpg" alt="Ridge Gourd">
-        <h3 data-en="Ridge Gourd" data-hi="तोरी" data-pa="ਤੋਰੀ">Ridge Gourd</h3>
-        <p data-en="Long tender fruits suitable for multiple harvests" data-hi="लंबे और कोमल फल, कई बार कटाई के लिए उपयुक्त" data-pa="ਲੰਮੇ ਤੇ ਨਰਮ ਫਲ, ਕਈ ਵਾਰ ਕਟਾਈ ਲਈ ਉਚਿਤ">
-          Long tender fruits suitable for multiple harvests
-        </p>
+        <h3>Ridge Gourd</h3>
+        <p>Long tender fruits suitable for multiple harvests</p>
       </div>
 
       <div class="card product-item" data-category="gourds">
         <img src="assets/images/products/11.jpg" alt="Sponge Gourd">
-        <h3 data-en="Sponge Gourd" data-hi="तुरई" data-pa="ਤੁਰੀ">Sponge Gourd</h3>
-        <p data-en="Fast-growing climber with uniform fruit shape" data-hi="तेज़ी से बढ़ने वाली बेल, समान आकार के फलों के साथ" data-pa="ਤੇਜ਼ੀ ਨਾਲ ਵਧਣ ਵਾਲੀ ਬੇਲ, ਇਕਸਾਰ ਆਕਾਰ ਵਾਲੇ ਫਲਾਂ ਨਾਲ">
-          Fast-growing climber with uniform fruit shape
-        </p>
+        <h3>Sponge Gourd</h3>
+        <p>Fast-growing climber with uniform fruit shape</p>
       </div>
 
       <div class="card product-item" data-category="cucurbits">
         <img src="assets/images/products/12.jpg" alt="Cucumber">
-        <h3 data-en="Cucumber" data-hi="खीरा" data-pa="ਖੀਰਾ">Cucumber</h3>
-        <p data-en="Crisp fruits with excellent productivity" data-hi="कुरकुरे फल और उत्कृष्ट उत्पादन क्षमता" data-pa="ਕਰਾਰੇ ਫਲ ਅਤੇ ਸ਼ਾਨਦਾਰ ਉਤਪਾਦਨ ਸਮਰੱਥਾ">
-          Crisp fruits with excellent productivity
-        </p>
+        <h3>Cucumber</h3>
+        <p>Crisp fruits with excellent productivity</p>
       </div>
     </div>
   </section>
-
+  
   <section class="contact" id="contact">
-    <h2 class="section-title" data-en="Contact Us" data-hi="संपर्क करें" data-pa="ਸੰਪਰਕ ਕਰੋ">
-      Contact Us
-    </h2>
+  <h2 class="section-title">Contact Us</h2>
 
-    <p>
-      <span data-en="Email:" data-hi="ईमेल:" data-pa="ਈਮੇਲ:">Email:</span>
-      <a href="mailto:Bharatseeds@gmail.com">Bharatseeds@gmail.com</a>
-    </p>
+  <p>Email: <a href="mailto:Bharatseeds@gmail.com">Bharatseeds@gmail.com</a></p>
 
-    <p>
-      <span data-en="Phone:" data-hi="फोन:" data-pa="ਫੋਨ:">Phone:</span>
-      <a href="tel:+919876910382">+91 98769 10382</a>
-    </p>
+  <p>Phone: <a href="tel:+919876910382">+91 98769 10382</a></p>
 
-    <p>
-      <a href="https://www.google.com/maps?q=95,+Luv-kush+Market,+Bus+Stand,+Patiala,+Punjab+147001,+India"
-         target="_blank"
-         rel="noopener noreferrer"
-         data-en="95, Luv-kush Market, Bus Stand, Patiala, Punjab 147001, India"
-         data-hi="95, लव-कुश मार्केट, बस स्टैंड, पटियाला, पंजाब 147001, भारत"
-         data-pa="95, ਲਵ-ਕੁਸ਼ ਮਾਰਕੀਟ, ਬਸ ਸਟੈਂਡ, ਪਟਿਆਲਾ, ਪੰਜਾਬ 147001, ਭਾਰਤ">
-        95, Luv-kush Market, Bus Stand, Patiala, Punjab 147001, India
-      </a>
-    </p>
-
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.1446462136223!2d76.40226665324055!3d30.338452761924554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391028f3098c396d%3A0x86d84044a77a9594!2sBharat%20Seeds!5e0!3m2!1sen!2sin!4v1775980598095!5m2!1sen!2sin"
-        width="800"
-        height="300"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-  </section>
-
-  <div class="social-icons">
-    <a href="https://wa.me/919876910382" target="_blank" rel="noopener noreferrer" class="whatsapp" aria-label="WhatsApp">
-      <i class="fab fa-whatsapp"></i>
+  <p>
+    <a href="https://www.google.com/maps?q=95,+Luv-kush+Market,+Bus+Stand,+Patiala,+Punjab+147001,+India"
+       target="_blank"
+       rel="noopener noreferrer">
+      95, Luv-kush Market, Bus Stand, Patiala, Punjab 147001, India
     </a>
+  </p>
 
-    <a href="https://www.facebook.com/share/1JHaWWN5nT/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="Facebook">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-
-    <a href="https://www.youtube.com/@bharatseedspatiala" target="_blank" rel="noopener noreferrer" class="youtube" aria-label="YouTube">
-      <i class="fab fa-youtube"></i>
-    </a>
-
-    <a href="https://www.instagram.com/bharat_seeds_patiala?igsh=MXJlamliZmdmdXNpZQ==" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.1446462136223!2d76.40226665324055!3d30.338452761924554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391028f3098c396d%3A0x86d84044a77a9594!2sBharat%20Seeds!5e0!3m2!1sen!2sin!4v1775980598095!5m2!1sen!2sin"
+      width="800"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </div>
+</section>
+
+<div class="social-icons">
+
+  <a href="https://wa.me/919876910382"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="whatsapp"
+     aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <a href="https://www.facebook.com/share/1JHaWWN5nT/?mibextid=wwXIfr"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="facebook"
+     aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/@bharatseedspatiala"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="youtube"
+     aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+
+  <a href="https://www.instagram.com/bharat_seeds_patiala?igsh=MXJlamliZmdmdXNpZQ=="
+     target="_blank"
+     rel="noopener noreferrer"
+     class="instagram"
+     aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+</div>
 
   <script src="assets/js/script.js"></script>
   <script>

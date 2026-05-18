@@ -1,57 +1,44 @@
-// Hide extra partners on page load
+document.addEventListener("DOMContentLoaded", () => {
+  const hiddenPartners = Array.from(document.querySelectorAll(".hidden-partner"));
+  const viewBtn = document.getElementById("viewBtn");
+  const menuToggle = document.getElementById("menuToggle");
+  const navbar = document.getElementById("navbar");
 
-document.addEventListener("DOMContentLoaded", function () {
+  let partnersVisible = false;
 
-  const hiddenPartners =
-    document.querySelectorAll(".hidden-partner");
+  function renderPartners() {
+    hiddenPartners.forEach((logo) => {
+      logo.classList.toggle("show", partnersVisible);
+    });
 
-  hiddenPartners.forEach(logo => {
-    logo.style.display = "none";
-  });
+    if (viewBtn) {
+      viewBtn.textContent = partnersVisible ? "Show Less" : "View All";
+      viewBtn.setAttribute("aria-expanded", String(partnersVisible));
+    }
+  }
 
-});
+  if (viewBtn) {
+    viewBtn.addEventListener("click", () => {
+      partnersVisible = !partnersVisible;
+      renderPartners();
+    });
+  }
 
+  renderPartners();
 
-// Toggle partners visibility
+  if (menuToggle && navbar) {
+    menuToggle.setAttribute("aria-expanded", "false");
 
-function togglePartners() {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navbar.classList.toggle("active");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
 
-  const hiddenPartners =
-    document.querySelectorAll(".hidden-partner");
-
-  const btn =
-    document.getElementById("viewBtn");
-
-  let isHidden =
-    hiddenPartners[0].style.display === "none";
-
-  hiddenPartners.forEach(logo => {
-
-    logo.style.display =
-      isHidden ? "block" : "none";
-
-  });
-
-  btn.textContent =
-    isHidden ? "Show Less" : "View All";
-
-}
-
-
-// MOBILE MENU TOGGLE
-
-document.addEventListener("DOMContentLoaded", function () {
-
-  const toggleBtn =
-    document.getElementById("menuToggle");
-
-  const navbar =
-    document.getElementById("navbar");
-
-  toggleBtn.addEventListener("click", function () {
-
-    navbar.classList.toggle("active");
-
-  });
-
+    navbar.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navbar.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
 });
