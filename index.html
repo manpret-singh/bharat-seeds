@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-default-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,86 +11,122 @@
 <body>
 
   <header>
-    <div class="logo">BHARAT SEEDS</div>
+  <div class="logo">BHARAT SEEDS</div>
+
+  <div class="header-right">
+    <select id="languageSelect" class="language-select" aria-label="Language selector">
+      <option value="en">EN</option>
+      <option value="hi">हिंदी</option>
+      <option value="pa">ਪੰਜਾਬੀ</option>
+    </select>
 
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
       <i class="fas fa-bars"></i>
     </button>
-
-    <nav id="navbar">
-      <a href="#">Home</a>
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-<section class="hero">
-  <div class="hero-content">
-    <h1>WHERE FARMERS TRUST</h1>
-    <p>Premium Quality Hybrid Vegetable Seeds</p>
-    <a href="products.html" class="btn">Explore Products</a>
   </div>
-</section>
+
+  <nav id="navbar">
+    <a href="#" data-en="Home" data-hi="होम" data-pa="ਹੋਮ">Home</a>
+    <a href="#about" data-en="About" data-hi="परिचय" data-pa="ਬਾਰੇ">About</a>
+    <a href="#products" data-en="Products" data-hi="उत्पाद" data-pa="ਉਤਪਾਦ">Products</a>
+    <a href="#contact" data-en="Contact" data-hi="संपर्क" data-pa="ਸੰਪਰਕ">Contact</a>
+  </nav>
+</header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1 data-en="WHERE FARMERS TRUST" data-hi="जहां किसान भरोसा करते हैं" data-pa="ਜਿੱਥੇ ਕਿਸਾਨ ਭਰੋਸਾ ਕਰਦੇ ਹਨ">
+        WHERE FARMERS TRUST
+      </h1>
+      <p data-en="Premium Quality Hybrid Vegetable Seeds" data-hi="उच्च गुणवत्ता वाले हाइब्रिड सब्ज़ी बीज" data-pa="ਉੱਚ ਗੁਣਵੱਤਾ ਵਾਲੇ ਹਾਈਬ੍ਰਿਡ ਸਬਜ਼ੀ ਬੀਜ">
+        Premium Quality Hybrid Vegetable Seeds
+      </p>
+      <a href="products.html" class="btn" data-en="Explore Products" data-hi="उत्पाद देखें" data-pa="ਉਤਪਾਦ ਵੇਖੋ">
+        Explore Products
+      </a>
+    </div>
+  </section>
 
   <section class="section" id="about">
-    <h2 class="section-title">About Bharat Seeds</h2>
+    <h2 class="section-title" data-en="About Bharat Seeds" data-hi="भरत सीड्स के बारे में" data-pa="ਭਾਰਤ ਸੀਡਜ਼ ਬਾਰੇ">
+      About Bharat Seeds
+    </h2>
 
     <div class="about">
       <img src="assets/images/bharatseedslogo.jpeg" alt="Bharat Seeds logo">
 
       <div>
-        <h3>Trusted Seeds for Better Harvest</h3>
-        <p>
-          Bharat Seeds provides high-quality hybrid vegetable seeds designed
-          for better yield, disease resistance, and strong crop performance
-          across India.
-          <br><br>
-          We partner with farmers, distributors, and agricultural experts
-          to deliver trusted seed solutions for sustainable farming.
+        <h3 data-en="Trusted Seeds for Better Harvest" data-hi="बेहतर उपज के लिए विश्वसनीय बीज" data-pa="ਵਧੀਆ ਉਪਜ ਲਈ ਭਰੋਸੇਮੰਦ ਬੀਜ">
+          Trusted Seeds for Better Harvest
+        </h3>
+
+        <p data-en="Bharat Seeds provides high-quality hybrid vegetable seeds designed for better yield, disease resistance, and strong crop performance across India."
+           data-hi="भरत सीड्स उच्च गुणवत्ता वाले हाइब्रिड सब्ज़ी बीज प्रदान करता है, जो बेहतर उपज, रोग प्रतिरोध और मजबूत फसल प्रदर्शन के लिए बनाए गए हैं।"
+           data-pa="ਭਾਰਤ ਸੀਡਜ਼ ਉੱਚ ਗੁਣਵੱਤਾ ਵਾਲੇ ਹਾਈਬ੍ਰਿਡ ਸਬਜ਼ੀ ਬੀਜ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ, ਜੋ ਵਧੀਆ ਉਪਜ, ਬਿਮਾਰੀ ਪ੍ਰਤੀਰੋਧ ਅਤੇ ਮਜ਼ਬੂਤ ਫਸਲੀ ਪ੍ਰਦਰਸ਼ਨ ਲਈ ਬਣਾਏ ਗਏ ਹਨ।">
+          Bharat Seeds provides high-quality hybrid vegetable seeds designed for better yield, disease resistance, and strong crop performance across India.
+        </p>
+
+        <p data-en="We partner with farmers, distributors, and agricultural experts to deliver trusted seed solutions for sustainable farming."
+           data-hi="हम किसानों, वितरकों और कृषि विशेषज्ञों के साथ मिलकर टिकाऊ खेती के लिए भरोसेमंद बीज समाधान उपलब्ध कराते हैं।"
+           data-pa="ਅਸੀਂ ਕਿਸਾਨਾਂ, ਡਿਸਟ੍ਰੀਬਿਊਟਰਾਂ ਅਤੇ ਖੇਤੀਬਾੜੀ ਵਿਸ਼ੇਸ਼ਗਿਆਂ ਨਾਲ ਮਿਲ ਕੇ ਟਿਕਾਊ ਖੇਤੀ ਲਈ ਭਰੋਸੇਮੰਦ ਬੀਜ ਹੱਲ ਪ੍ਰਦਾਨ ਕਰਦੇ ਹਾਂ।">
+          We partner with farmers, distributors, and agricultural experts to deliver trusted seed solutions for sustainable farming.
         </p>
       </div>
     </div>
   </section>
 
   <section class="section" id="products">
-  <h2 class="section-title">Our Categories</h2>
+    <h2 class="section-title" data-en="Our Categories" data-hi="हमारी श्रेणियाँ" data-pa="ਸਾਡੀਆਂ ਸ਼੍ਰੇਣੀਆਂ">
+      Our Categories
+    </h2>
 
-  <div class="products">
-    <a href="products.html?category=leafy" class="card category-card">
-      <img src="assets/images/categories/1.jpg" alt="Leafy Vegetables">
-      <h3>Leafy Vegetables</h3>
-      <p>Fenugreek, Coriander, Amaranthus, Lettuce</p>
-    </a>
+    <div class="products">
+      <a href="products.html?category=leafy" class="card category-card">
+        <img src="assets/images/categories/1.jpg" alt="Leafy Vegetables">
+        <h3 data-en="Leafy Vegetables" data-hi="पत्तेदार सब्जियाँ" data-pa="ਪੱਤੇਦਾਰ ਸਬਜ਼ੀਆਂ">Leafy Vegetables</h3>
+        <p data-en="Fenugreek, Coriander, Amaranthus, Lettuce" data-hi="मेथी, धनिया, चौलाई, लेट्यूस" data-pa="ਮੇਥੀ, ਧਨੀਆ, ਚੌਲਾਈ, ਲੈਟਸ">
+          Fenugreek, Coriander, Amaranthus, Lettuce
+        </p>
+      </a>
 
-    <a href="products.html?category=solanaceous" class="card category-card">
-      <img src="assets/images/categories/2.jpg" alt="Solanaceous Crops">
-      <h3>Solanaceous Crops</h3>
-      <p>Brinjal, Chilli, Capsicum</p>
-    </a>
+      <a href="products.html?category=solanaceous" class="card category-card">
+        <img src="assets/images/categories/2.jpg" alt="Solanaceous Crops">
+        <h3 data-en="Solanaceous Crops" data-hi="सोलनैशियस फसलें" data-pa="ਸੋਲਨੇਸ਼ੀਅਸ ਫਸਲਾਂ">Solanaceous Crops</h3>
+        <p data-en="Brinjal, Chilli, Capsicum" data-hi="बैंगन, मिर्च, शिमला मिर्च" data-pa="ਬੈਂਗਣ, ਮਿਰਚ, ਸ਼ਿਮਲਾ ਮਿਰਚ">
+          Brinjal, Chilli, Capsicum
+        </p>
+      </a>
 
-    <a href="products.html?category=gourds" class="card category-card">
-      <img src="assets/images/categories/3.jpg" alt="Gourds">
-      <h3>Gourds</h3>
-      <p>Bitter Gourd, Ridge Gourd, Sponge Gourd</p>
-    </a>
+      <a href="products.html?category=gourds" class="card category-card">
+        <img src="assets/images/categories/3.jpg" alt="Gourds">
+        <h3 data-en="Gourds" data-hi="लौकी वर्ग की फसलें" data-pa="ਲੌਕੀ ਵਰਗ ਦੀਆਂ ਫਸਲਾਂ">Gourds</h3>
+        <p data-en="Bitter Gourd, Ridge Gourd, Sponge Gourd" data-hi="करेला, तोरी, तुरई" data-pa="ਕਰੇਲਾ, ਤੋਰੀ, ਤੁਰੀ">
+          Bitter Gourd, Ridge Gourd, Sponge Gourd
+        </p>
+      </a>
 
-    <a href="products.html?category=cucurbits" class="card category-card">
-      <img src="assets/images/categories/4.jpg" alt="Cucurbits">
-      <h3>Cucurbits</h3>
-      <p>Cucumber and related varieties</p>
-    </a>
+      <a href="products.html?category=cucurbits" class="card category-card">
+        <img src="assets/images/categories/4.jpg" alt="Cucurbits">
+        <h3 data-en="Cucurbits" data-hi="कद्दूवर्गीय फसलें" data-pa="ਕੱਦੂਵਰਗੀ ਫਸਲਾਂ">Cucurbits</h3>
+        <p data-en="Cucumber and related varieties" data-hi="खीरा और संबंधित किस्में" data-pa="ਖੀਰਾ ਅਤੇ ਸੰਬੰਧਿਤ ਕਿਸਮਾਂ">
+          Cucumber and related varieties
+        </p>
+      </a>
 
-    <a href="products.html?category=pod" class="card category-card">
-      <img src="assets/images/categories/5.jpg" alt="Pod Vegetables">
-      <h3>Pod Vegetables</h3>
-      <p>Okra and similar varieties</p>
-    </a>
-  </div>
-</section>
+      <a href="products.html?category=pod" class="card category-card">
+        <img src="assets/images/categories/5.jpg" alt="Pod Vegetables">
+        <h3 data-en="Pod Vegetables" data-hi="फलीदार सब्जियाँ" data-pa="ਫਲੀਦਾਰ ਸਬਜ਼ੀਆਂ">Pod Vegetables</h3>
+        <p data-en="Okra and similar varieties" data-hi="भिंडी और समान किस्में" data-pa="ਭਿੰਡੀ ਅਤੇ ਸਮਾਨ ਕਿਸਮਾਂ">
+          Okra and similar varieties
+        </p>
+      </a>
+    </div>
+  </section>
 
   <section class="partners-section">
-    <h2 class="section-title">Our Partners</h2>
+    <h2 class="section-title" data-en="Our Partners" data-hi="हमारे साझेदार" data-pa="ਸਾਡੇ ਸਾਥੀ">
+      Our Partners
+    </h2>
 
     <div class="partners-grid" id="partnersGrid">
       <img src="assets/images/partners/1.jpeg" class="partner-logo" alt="Partner logo 1">
@@ -124,18 +160,31 @@
       <img src="assets/images/partners/28.jpeg" class="partner-logo hidden-partner" alt="Partner logo 28">
     </div>
 
-    <button class="view-btn" onclick="togglePartners()" id="viewBtn" type="button">
+    <button class="view-btn" onclick="togglePartners()" id="viewBtn" type="button" data-en="View All" data-hi="सभी देखें" data-pa="ਸਾਰੇ ਵੇਖੋ">
       View All
     </button>
   </section>
 
   <section class="contact" id="contact">
-    <h2 class="section-title">Contact Us</h2>
+    <h2 class="section-title" data-en="Contact Us" data-hi="संपर्क करें" data-pa="ਸੰਪਰਕ ਕਰੋ">
+      Contact Us
+    </h2>
 
-    <p>Email: <a href="mailto:Bharatseeds@gmail.com">Bharatseeds@gmail.com</a></p>
-    <p>Phone: <a href="tel:+919876910382">+91 98769 10382</a></p>
     <p>
-      <a href="https://www.google.com/maps?q=95,+Luv-kush+Market,+Bus+Stand,+Patiala,+Punjab+147001,+India" target="_blank" rel="noopener noreferrer">
+      <span data-en="Email:" data-hi="ईमेल:" data-pa="ਈਮੇਲ:">Email:</span>
+      <a href="mailto:Bharatseeds@gmail.com">Bharatseeds@gmail.com</a>
+    </p>
+
+    <p>
+      <span data-en="Phone:" data-hi="फोन:" data-pa="ਫੋਨ:">Phone:</span>
+      <a href="tel:+919876910382">+91 98769 10382</a>
+    </p>
+
+    <p>
+      <a href="https://www.google.com/maps?q=95,+Luv-kush+Market,+Bus+Stand,+Patiala,+Punjab+147001,+India" target="_blank" rel="noopener noreferrer"
+         data-en="95, Luv-kush Market, Bus Stand, Patiala, Punjab 147001, India"
+         data-hi="95, लव-कुश मार्केट, बस स्टैंड, पटियाला, पंजाब 147001, भारत"
+         data-pa="95, ਲਵ-ਕੁਸ਼ ਮਾਰਕੀਟ, ਬਸ ਸਟੈਂਡ, ਪਟਿਆਲਾ, ਪੰਜਾਬ 147001, ਭਾਰਤ">
         95, Luv-kush Market, Bus Stand, Patiala, Punjab 147001, India
       </a>
     </p>
@@ -154,8 +203,8 @@
   </section>
 
   <footer>
-    <p>GSTIN: 03AAJFB7450Q1Z3</p>
-    <p>Bharat Seeds | Since 1993</p>
+    <p data-en="GSTIN: 03AAJFB7450Q1Z3" data-hi="जीएसटीआईएन: 03AAJFB7450Q1Z3" data-pa="ਜੀਐਸਟੀਈਐਨ: 03AAJFB7450Q1Z3">GSTIN: 03AAJFB7450Q1Z3</p>
+    <p data-en="Bharat Seeds | Since 1993" data-hi="भरत सीड्स | 1993 से" data-pa="ਭਾਰਤ ਸੀਡਜ਼ | 1993 ਤੋਂ">Bharat Seeds | Since 1993</p>
   </footer>
 
   <div class="social-icons">
