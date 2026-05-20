@@ -5,229 +5,217 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bharat Seeds | Products</title>
   <link rel="icon" href="minefavicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/style.css?v=2">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <header>
-    <a href="index.html" class="logo-link">
-  <div class="logo">BHARAT SEEDS</div>
-</a>
+  <!-- ── HEADER ─────────────────────────────────── -->
+  <header id="siteHeader">
+    <a href="index.html" class="header-brand">
+      <img src="minefavicon.svg" alt="Bharat Seeds Logo" class="header-logo-img" type="image/svg+xml">
+      <div class="logo">BHARAT SEEDS</div>
+    </a>
 
-  <div class="header-right">
-    <select id="languageSelect" class="language-select" aria-label="Language selector">
-      <option value="en">EN</option>
-      <option value="hi">हिंदी</option>
-      <option value="pa">ਪੰਜਾਬੀ</option>
-    </select>
+    <nav id="navbar">
+      <a href="index.html" data-en="Home" data-hi="होम" data-pa="ਹੋਮ">Home</a>
+      <a href="products.html" data-en="Products" data-hi="उत्पाद" data-pa="ਉਤਪਾਦ">Products</a>
+      <a href="#contact" data-en="Contact Us" data-hi="संपर्क करें" data-pa="ਸੰਪਰਕ ਕਰੋ">Contact Us</a>
+    </nav>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <i class="fas fa-bars"></i>
-    </button>
-  </div>
+    <div class="header-right">
+      <div class="lang-wrap">
+        <i class="fas fa-globe lang-globe"></i>
+        <select id="languageSelect" class="language-select" aria-label="Language selector">
+          <option value="en">EN</option>
+          <option value="hi">हिंदी</option>
+          <option value="pa">ਪੰਜਾਬੀ</option>
+        </select>
+        <i class="fas fa-chevron-down lang-chevron"></i>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
 
-  <nav id="navbar">
-  <a href="products.html" data-en="Products" data-hi="उत्पाद" data-pa="ਉਤਪਾਦ">Products</a>
-  <a href="#contact" data-en="Contact Us" data-hi="संपर्क करें" data-pa="ਸੰਪਰਕ ਕਰੋ">Contact Us</a>
-</nav>
-</header>
+  <!-- ── PAGE BANNER ────────────────────────────── -->
+  <section class="page-banner">
+    <div class="breadcrumb">
+      <a href="index.html" data-en="Home" data-hi="होम" data-pa="ਹੋਮ">Home</a>
+      &nbsp;/&nbsp;
+      <span data-en="Products" data-hi="उत्पाद" data-pa="ਉਤਪਾਦ">Products</span>
+    </div>
+    <h1 data-en="Our Products" data-hi="हमारे उत्पाद" data-pa="ਸਾਡੇ ਉਤਪਾਦ">Our Products</h1>
+    <p data-en="Quality seeds, tools & supplies for every farmer"
+       data-hi="हर किसान के लिए गुणवत्तापूर्ण बीज, उपकरण और आपूर्ति"
+       data-pa="ਹਰ ਕਿਸਾਨ ਲਈ ਗੁਣਵੱਤਾ ਵਾਲੇ ਬੀਜ, ਸੰਦ ਅਤੇ ਸਮੱਗਰੀ">
+      Quality seeds, tools &amp; supplies for every farmer
+    </p>
+  </section>
 
+  <!-- ── PRODUCTS GRID ───────────────────────────── -->
   <section class="section">
-    <h2 class="section-title" data-en="Products" data-hi="उत्पाद" data-pa="ਉਤਪਾਦ">Products</h2>
 
     <div class="product-filter">
       <button class="filter-btn active" data-category="all" data-en="All" data-hi="सभी" data-pa="ਸਭ">All</button>
-      <button class="filter-btn" data-category="leafy" data-en="Leafy Vegetables" data-hi="पत्तेदार सब्जियाँ" data-pa="ਪੱਤੇਦਾਰ ਸਬਜ਼ੀਆਂ">Leafy Vegetables</button>
-      <button class="filter-btn" data-category="solanaceous" data-en="Solanaceous Crops" data-hi="सोलनैशियस फसलें" data-pa="ਸੋਲਨੇਸ਼ੀਅਸ ਫਸਲਾਂ">Solanaceous Crops</button>
-      <button class="filter-btn" data-category="gourds" data-en="Gourds" data-hi="लौकी वर्ग की फसलें" data-pa="ਲੌਕੀ ਵਰਗ ਦੀਆਂ ਫਸਲਾਂ">Gourds</button>
-      <button class="filter-btn" data-category="cucurbits" data-en="Cucurbits" data-hi="कद्दूवर्गीय फसलें" data-pa="ਕੱਦੂਵਰਗੀ ਫਸਲਾਂ">Cucurbits</button>
-      <button class="filter-btn" data-category="pod" data-en="Pod Vegetables" data-hi="फलीदार सब्जियाँ" data-pa="ਫਲੀਦਾਰ ਸਬਜ਼ੀਆਂ">Pod Vegetables</button>
+      <button class="filter-btn" data-category="vegetable" data-en="Vegetable &amp; Fruit Seeds" data-hi="सब्जी और फल के बीज" data-pa="ਸਬਜ਼ੀ ਅਤੇ ਫਲ ਦੇ ਬੀਜ">Vegetable &amp; Fruit Seeds</button>
+      <button class="filter-btn" data-category="field" data-en="Field Crop Seeds" data-hi="खेत फसल बीज" data-pa="ਖੇਤ ਫਸਲ ਬੀਜ">Field Crop Seeds</button>
+      <button class="filter-btn" data-category="tools" data-en="Gardening &amp; Farming Tools" data-hi="बागवानी और खेती के उपकरण" data-pa="ਬਾਗਬਾਨੀ ਅਤੇ ਖੇਤੀ ਸੰਦ">Gardening &amp; Farming Tools</button>
+      <button class="filter-btn" data-category="mulching" data-en="Mulching &amp; Nursery Supplies" data-hi="मल्चिंग और नर्सरी सामग्री" data-pa="ਮਲਚਿੰਗ ਅਤੇ ਨਰਸਰੀ ਸਮੱਗਰੀ">Mulching &amp; Nursery Supplies</button>
+      <button class="filter-btn" data-category="sprayers" data-en="Sprayers &amp; Watering Tools" data-hi="स्प्रेयर और सिंचाई उपकरण" data-pa="ਸਪ੍ਰੇਅਰ ਅਤੇ ਸਿੰਚਾਈ ਸੰਦ">Sprayers &amp; Watering Tools</button>
     </div>
 
     <div class="products" id="productGrid">
-      <div class="card product-item" data-category="leafy">
-        <img src="assets/images/products/1.jpg" alt="Fenugreek">
-        <h3 data-en="Fenugreek" data-hi="मेथी" data-pa="ਮੇਥੀ">Fenugreek</h3>
-        <p data-en="Fast-growing leafy variety with strong aroma" data-hi="तेज़ी से बढ़ने वाली पत्तेदार किस्म, जिसमें तेज़ सुगंध होती है" data-pa="ਤੇਜ਼ੀ ਨਾਲ ਵਧਣ ਵਾਲੀ ਪੱਤੇਦਾਰ ਕਿਸਮ, ਜਿਸ ਵਿੱਚ ਮਜ਼ਬੂਤ ਖੁਸ਼ਬੂ ਹੁੰਦੀ ਹੈ">
-          Fast-growing leafy variety with strong aroma
-        </p>
-      </div>
 
-      <div class="card product-item" data-category="leafy">
-        <img src="assets/images/products/2.jpg" alt="Coriander">
-        <h3 data-en="Coriander" data-hi="धनिया" data-pa="ਧਨੀਆ">Coriander</h3>
-        <p data-en="High germination seeds for fresh green leaves" data-hi="ताज़ी हरी पत्तियों के लिए उच्च अंकुरण वाले बीज" data-pa="ਤਾਜ਼ੀਆਂ ਹਰੀਆਂ ਪੱਤੀਆਂ ਲਈ ਉੱਚ ਅੰਕੁਰਣ ਵਾਲੇ ਬੀਜ">
-          High germination seeds for fresh green leaves
-        </p>
-      </div>
+      <!-- VEGETABLE & FRUIT SEEDS -->
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/1.jpeg" alt="Round Tomato"><h3 data-en="Round Tomato" data-hi="गोल टमाटर" data-pa="ਗੋਲ ਟਮਾਟਰ">Round Tomato</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/2.jpeg" alt="Roma Tomato"><h3 data-en="Roma Tomato" data-hi="रोमा टमाटर" data-pa="ਰੋਮਾ ਟਮਾਟਰ">Roma Tomato</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/3.jpeg" alt="Chilli"><h3 data-en="Chilli" data-hi="मिर्च" data-pa="ਮਿਰਚ">Chilli</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/4.jpeg" alt="Capsicum"><h3 data-en="Capsicum" data-hi="शिमला मिर्च" data-pa="ਸ਼ਿਮਲਾ ਮਿਰਚ">Capsicum</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/5.jpeg" alt="Brinjal"><h3 data-en="Brinjal" data-hi="बैंगन" data-pa="ਬੈਂਗਣ">Brinjal</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/6.jpeg" alt="Okra"><h3 data-en="Okra" data-hi="भिंडी" data-pa="ਭਿੰਡੀ">Okra</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/7.jpeg" alt="Cucumber"><h3 data-en="Cucumber" data-hi="खीरा" data-pa="ਖੀਰਾ">Cucumber</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/8.jpeg" alt="Bottle Gourd"><h3 data-en="Bottle Gourd" data-hi="लौकी" data-pa="ਲੌਕੀ">Bottle Gourd</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/9.jpeg" alt="Black Sponge Gourd"><h3 data-en="Black Sponge Gourd" data-hi="काली तुरई" data-pa="ਕਾਲੀ ਤੁਰੀ">Black Sponge Gourd</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/10.jpeg" alt="White Sponge Gourd"><h3 data-en="White Sponge Gourd" data-hi="सफेद तुरई" data-pa="ਚਿੱਟੀ ਤੁਰੀ">White Sponge Gourd</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/11.jpeg" alt="Ridge Gourd"><h3 data-en="Ridge Gourd" data-hi="तोरी" data-pa="ਤੋਰੀ">Ridge Gourd</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/12.jpeg" alt="Regular Bitter Gourd"><h3 data-en="Regular Bitter Gourd" data-hi="साधारण करेला" data-pa="ਸਾਧਾਰਨ ਕਰੇਲਾ">Regular Bitter Gourd</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/13.jpeg" alt="Long Bitter Gourd"><h3 data-en="Long Bitter Gourd" data-hi="लंबा करेला" data-pa="ਲੰਮਾ ਕਰੇਲਾ">Long Bitter Gourd</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/14.jpeg" alt="Small Bitter Gourd"><h3 data-en="Small Bitter Gourd" data-hi="छोटा करेला" data-pa="ਛੋਟਾ ਕਰੇਲਾ">Small Bitter Gourd</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/15.jpeg" alt="Pumpkin"><h3 data-en="Pumpkin" data-hi="कद्दू" data-pa="ਕੱਦੂ">Pumpkin</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/16.jpeg" alt="Drum Shaped Pumpkin"><h3 data-en="Drum Shaped Pumpkin" data-hi="ढोल आकार का कद्दू" data-pa="ਢੋਲ ਆਕਾਰ ਦਾ ਕੱਦੂ">Drum Shaped Pumpkin</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/17.jpeg" alt="Ash Gourd Pumpkin"><h3 data-en="Ash Gourd Pumpkin" data-hi="पेठा कद्दू" data-pa="ਪੇਠਾ ਕੱਦੂ">Ash Gourd Pumpkin</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/18.jpeg" alt="Snake Gourd"><h3 data-en="Snake Gourd" data-hi="चिचिंडा" data-pa="ਚਿਚਿੰਡਾ">Snake Gourd</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/19.jpeg" alt="Squash"><h3 data-en="Squash" data-hi="स्क्वैश" data-pa="ਸਕੁਐਸ਼">Squash</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/20.jpeg" alt="Watermelon"><h3 data-en="Watermelon" data-hi="तरबूज" data-pa="ਤਰਬੂਜ਼">Watermelon</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/21.jpeg" alt="Muskmelon"><h3 data-en="Muskmelon" data-hi="खरबूजा" data-pa="ਖਰਬੂਜ਼ਾ">Muskmelon</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/22.jpeg" alt="Papaya"><h3 data-en="Papaya" data-hi="पपीता" data-pa="ਪਪੀਤਾ">Papaya</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/23.jpeg" alt="Coriander"><h3 data-en="Coriander" data-hi="धनिया" data-pa="ਧਨੀਆ">Coriander</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/24.jpeg" alt="Spinach"><h3 data-en="Spinach" data-hi="पालक" data-pa="ਪਾਲਕ">Spinach</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/25.jpeg" alt="Lettuce"><h3 data-en="Lettuce" data-hi="लेट्यूस" data-pa="ਲੈਟਸ">Lettuce</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/26.jpeg" alt="Radish"><h3 data-en="Radish" data-hi="मूली" data-pa="ਮੂਲੀ">Radish</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/27.jpeg" alt="Carrot"><h3 data-en="Carrot" data-hi="गाजर" data-pa="ਗਾਜਰ">Carrot</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/28.jpeg" alt="Beetroot"><h3 data-en="Beetroot" data-hi="चुकंदर" data-pa="ਚੁਕੰਦਰ">Beetroot</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/29.jpeg" alt="Onion"><h3 data-en="Onion" data-hi="प्याज" data-pa="ਪਿਆਜ਼">Onion</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/30.jpeg" alt="Cauliflower"><h3 data-en="Cauliflower" data-hi="फूलगोभी" data-pa="ਫੁੱਲਗੋਭੀ">Cauliflower</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/31.jpeg" alt="Cabbage"><h3 data-en="Cabbage" data-hi="पत्तागोभी" data-pa="ਪੱਤਾਗੋਭੀ">Cabbage</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/32.jpeg" alt="Broccoli"><h3 data-en="Broccoli" data-hi="ब्रोकली" data-pa="ਬਰੌਕਲੀ">Broccoli</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/33.jpeg" alt="Peas"><h3 data-en="Peas" data-hi="मटर" data-pa="ਮਟਰ">Peas</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/34.jpeg" alt="Turnip"><h3 data-en="Turnip" data-hi="शलजम" data-pa="ਸ਼ਲਗਮ">Turnip</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/35.jpeg" alt="Knol Khol"><h3 data-en="Knol Khol" data-hi="गांठगोभी" data-pa="ਗੰਢਗੋਭੀ">Knol Khol</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/36.jpeg" alt="French Bean"><h3 data-en="French Bean" data-hi="फ्रेंच बीन" data-pa="ਫ੍ਰੈਂਚ ਬੀਨ">French Bean</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/37.jpeg" alt="Cluster Bean"><h3 data-en="Cluster Bean" data-hi="ग्वार फली" data-pa="ਗੁਆਰ ਫਲੀ">Cluster Bean</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/38.jpeg" alt="Cowpea"><h3 data-en="Cowpea" data-hi="लोबिया" data-pa="ਲੋਬੀਆ">Cowpea</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/39.jpeg" alt="Zucchini"><h3 data-en="Zucchini" data-hi="तोरी (जुकीनी)" data-pa="ਤੋਰੀ (ਜ਼ੁਕੀਨੀ)">Zucchini</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/40.jpeg" alt="Snake Cucumber"><h3 data-en="Snake Cucumber" data-hi="साँप ककड़ी" data-pa="ਸੱਪ ਖੀਰਾ">Snake Cucumber</h3></div>
 
-      <div class="card product-item" data-category="leafy">
-        <img src="assets/images/products/3.jpg" alt="Amaranthus">
-        <h3 data-en="Amaranthus" data-hi="चौलाई" data-pa="ਚੌਲਾਈ">Amaranthus</h3>
-        <p data-en="Nutritious leafy vegetable with quick harvest" data-hi="पौष्टिक पत्तेदार सब्ज़ी, जल्दी कटाई के लिए उपयुक्त" data-pa="ਪੋਸ਼ਣ ਭਰਪੂਰ ਪੱਤੇਦਾਰ ਸਬਜ਼ੀ, ਜਲਦੀ ਕਟਾਈ ਲਈ ਉਚਿਤ">
-          Nutritious leafy vegetable with quick harvest
-        </p>
-      </div>
+      <!-- FIELD CROP SEEDS -->
+      <div class="card product-item" data-category="field"><img src="assets/images/products/41.jpeg" alt="Corn"><h3 data-en="Corn" data-hi="मक्का" data-pa="ਮੱਕੀ">Corn</h3></div>
+      <div class="card product-item" data-category="field"><img src="assets/images/products/42.jpeg" alt="Sweet Corn"><h3 data-en="Sweet Corn" data-hi="स्वीट कॉर्न" data-pa="ਸਵੀਟ ਕੌਰਨ">Sweet Corn</h3></div>
+      <div class="card product-item" data-category="field"><img src="assets/images/products/43.jpeg" alt="Bajra"><h3 data-en="Bajra" data-hi="बाजरा" data-pa="ਬਾਜਰਾ">Bajra</h3></div>
+      <div class="card product-item" data-category="field"><img src="assets/images/products/44.jpeg" alt="Jowar"><h3 data-en="Jowar" data-hi="ज्वार" data-pa="ਜੁਆਰ">Jowar</h3></div>
+      <div class="card product-item" data-category="field"><img src="assets/images/products/45.jpeg" alt="Moong"><h3 data-en="Moong" data-hi="मूंग" data-pa="ਮੂੰਗ">Moong</h3></div>
+      <div class="card product-item" data-category="field"><img src="assets/images/products/46.jpeg" alt="Wheat"><h3 data-en="Wheat" data-hi="गेहूं" data-pa="ਕਣਕ">Wheat</h3></div>
+      <div class="card product-item" data-category="field"><img src="assets/images/products/47.jpeg" alt="Paddy (Rice)"><h3 data-en="Paddy (Rice)" data-hi="धान (चावल)" data-pa="ਝੋਨਾ (ਚਾਵਲ)">Paddy (Rice)</h3></div>
 
-      <div class="card product-item" data-category="leafy">
-        <img src="assets/images/products/4.jpg" alt="Lettuce">
-        <h3 data-en="Lettuce" data-hi="लेट्यूस" data-pa="ਲੈਟਸ">Lettuce</h3>
-        <p data-en="Crisp leafy varieties suitable for salads" data-hi="सलाद के लिए उपयुक्त कुरकुरी पत्तेदार किस्में" data-pa="ਸਲਾਦ ਲਈ ਉਚਿਤ ਕਰਾਰੀ ਪੱਤੇਦਾਰ ਕਿਸਮਾਂ">
-          Crisp leafy varieties suitable for salads
-        </p>
-      </div>
+      <!-- GARDENING & FARMING TOOLS -->
+      <div class="card product-item" data-category="tools"><img src="assets/images/products/48.jpeg" alt="Hedge Shear"><h3 data-en="Hedge Shear" data-hi="हेज कैंची" data-pa="ਹੈੱਜ ਕੈਂਚੀ">Hedge Shear</h3></div>
+      <div class="card product-item" data-category="tools"><img src="assets/images/products/49.jpeg" alt="Thinning Scissors"><h3 data-en="Thinning Scissors" data-hi="थिनिंग कैंची" data-pa="ਪਤਲੀ ਕੈਂਚੀ">Thinning Scissors</h3></div>
+      <div class="card product-item" data-category="tools"><img src="assets/images/products/50.jpeg" alt="Pruning Shear"><h3 data-en="Pruning Shear" data-hi="प्रूनिंग कैंची" data-pa="ਛਾਂਟਣ ਕੈਂਚੀ">Pruning Shear</h3></div>
+      <div class="card product-item" data-category="tools"><img src="assets/images/products/51.jpeg" alt="Khurpi"><h3 data-en="Khurpi" data-hi="खुरपी" data-pa="ਖੁਰਪੀ">Khurpi</h3></div>
+      <div class="card product-item" data-category="tools"><img src="assets/images/products/52.jpeg" alt="Hand Trowel &amp; Fork"><h3 data-en="Hand Trowel &amp; Fork" data-hi="हैंड ट्रॉवेल और फोर्क" data-pa="ਹੈਂਡ ਟਰੌਵਲ ਅਤੇ ਫੋਰਕ">Hand Trowel &amp; Fork</h3></div>
 
-      <div class="card product-item" data-category="solanaceous">
-        <img src="assets/images/products/5.jpg" alt="Brinjal">
-        <h3 data-en="Brinjal" data-hi="बैंगन" data-pa="ਬੈਂਗਣ">Brinjal</h3>
-        <p data-en="High-yield hybrid varieties with uniform fruits" data-hi="समान आकार के फलों वाली उच्च उपज हाइब्रिड किस्में" data-pa="ਇਕਸਾਰ ਫਲਾਂ ਵਾਲੀਆਂ ਉੱਚ ਉਪਜ ਹਾਈਬ੍ਰਿਡ ਕਿਸਮਾਂ">
-          High-yield hybrid varieties with uniform fruits
-        </p>
-      </div>
+      <!-- MULCHING & NURSERY SUPPLIES -->
+      <div class="card product-item" data-category="mulching"><img src="assets/images/products/53.jpeg" alt="Mulching Film"><h3 data-en="Mulching Film" data-hi="मल्चिंग फिल्म" data-pa="ਮਲਚਿੰਗ ਫਿਲਮ">Mulching Film</h3></div>
+      <div class="card product-item" data-category="mulching"><img src="assets/images/products/54.jpeg" alt="Low Tunnel Roll"><h3 data-en="Low Tunnel Roll" data-hi="लो टनल रोल" data-pa="ਲੋ ਟਨਲ ਰੋਲ">Low Tunnel Roll</h3></div>
+      <div class="card product-item" data-category="mulching"><img src="assets/images/products/55.jpeg" alt="Low Tunnel Sticks"><h3 data-en="Low Tunnel Sticks" data-hi="लो टनल स्टिक्स" data-pa="ਲੋ ਟਨਲ ਸਟਿੱਕਸ">Low Tunnel Sticks</h3></div>
+      <div class="card product-item" data-category="mulching"><img src="assets/images/products/56.jpeg" alt="Cocopeat"><h3 data-en="Cocopeat" data-hi="कोकोपीट" data-pa="ਕੋਕੋਪੀਟ">Cocopeat</h3></div>
+      <div class="card product-item" data-category="mulching"><img src="assets/images/products/57.jpeg" alt="Vermi Compost"><h3 data-en="Vermi Compost" data-hi="वर्मी कम्पोस्ट" data-pa]="वरमी ਖाद">Vermi Compost</h3></div>
+      <div class="card product-item" data-category="mulching"><img src="assets/images/products/58.jpeg" alt="98 Holes Seedling Tray"><h3 data-en="98 Holes Seedling Tray" data-hi="98 होल सीडलिंग ट्रे" data-pa="98 ਮੋਰੀ ਸੀਡਲਿੰਗ ਟਰੇ">98 Holes Seedling Tray</h3></div>
+      <div class="card product-item" data-category="mulching"><img src="assets/images/products/59.jpeg" alt="104 Holes Seedling Tray"><h3 data-en="104 Holes Seedling Tray" data-hi="104 होल सीडलिंग ट्रे" data-pa="104 ਮੋਰੀ ਸੀਡਲਿੰਗ ਟਰੇ">104 Holes Seedling Tray</h3></div>
+      <div class="card product-item" data-category="mulching"><img src="assets/images/products/60.jpeg" alt="50 Holes Seedling Tray"><h3 data-en="50 Holes Seedling Tray" data-hi="50 होल सीडलिंग ट्रे" data-pa="50 ਮੋਰੀ ਸੀਡਲਿੰਗ ਟਰੇ">50 Holes Seedling Tray</h3></div>
 
-      <div class="card product-item" data-category="solanaceous">
-        <img src="assets/images/products/6.jpg" alt="Chilli">
-        <h3 data-en="Chilli" data-hi="मिर्च" data-pa="ਮਿਰਚ">Chilli</h3>
-        <p data-en="Disease-resistant varieties with strong yield" data-hi="रोग-प्रतिरोधी किस्में, मजबूत उपज के साथ" data-pa="ਬਿਮਾਰੀ-ਰੋਧੀ ਕਿਸਮਾਂ, ਮਜ਼ਬੂਤ ਉਪਜ ਨਾਲ">
-          Disease-resistant varieties with strong yield
-        </p>
-      </div>
+      <!-- SPRAYERS & WATERING TOOLS -->
+      <div class="card product-item" data-category="sprayers"><img src="assets/images/products/61.jpeg" alt="16L Manual Pump"><h3 data-en="16L Manual Pump" data-hi="16 लीटर मैनुअल पंप" data-pa="16 ਲੀਟਰ ਮੈਨੁਅਲ ਪੰਪ">16L Manual Pump</h3></div>
+      <div class="card product-item" data-category="sprayers"><img src="assets/images/products/62.jpeg" alt="20L Electric Pump"><h3 data-en="20L Electric Pump" data-hi="20 लीटर इलेक्ट्रिक पंप" data-pa="20 ਲੀਟਰ ਇਲੈਕਟ੍ਰਿਕ ਪੰਪ">20L Electric Pump</h3></div>
+      <div class="card product-item" data-category="sprayers"><img src="assets/images/products/63.jpeg" alt="25L Power Engine Pump"><h3 data-en="25L Power Engine Pump" data-hi="25 लीटर पावर इंजन पंप" data-pa="25 ਲੀਟਰ ਪਾਵਰ ਇੰਜਣ ਪੰਪ">25L Power Engine Pump</h3></div>
+      <div class="card product-item" data-category="sprayers"><img src="assets/images/products/64.jpeg" alt="5L Water Can"><h3 data-en="5L Water Can" data-hi="5 लीटर पानी की कैन" data-pa="5 ਲੀਟਰ ਪਾਣੀ ਦਾ ਡੱਬਾ">5L Water Can</h3></div>
+      <div class="card product-item" data-category="sprayers"><img src="assets/images/products/65.jpeg" alt="6L Water Can"><h3 data-en="6L Water Can" data-hi="6 लीटर पानी की कैन" data-pa="6 ਲੀਟਰ ਪਾਣੀ ਦਾ ਡੱਬਾ">6L Water Can</h3></div>
+      <div class="card product-item" data-category="sprayers"><img src="assets/images/products/66.jpeg" alt="10L Water Can"><h3 data-en="10L Water Can" data-hi="10 लीटर पानी की कैन" data-pa="10 ਲੀਟਰ ਪਾਣੀ ਦਾ ਡੱਬਾ">10L Water Can</h3></div>
+      <div class="card product-item" data-category="sprayers"><img src="assets/images/products/67.jpeg" alt="Spray Pumps"><h3 data-en="Spray Pumps" data-hi="स्प्रे पंप" data-pa="ਸਪ੍ਰੇ ਪੰਪ">Spray Pumps</h3></div>
+      <div class="card product-item" data-category="sprayers"><img src="assets/images/products/68.jpeg" alt="Fly Trap"><h3 data-en="Fly Trap" data-hi="फ्लाई ट्रैप" data-pa="ਫਲਾਈ ਟਰੈਪ">Fly Trap</h3></div>
 
-      <div class="card product-item" data-category="solanaceous">
-        <img src="assets/images/products/7.jpg" alt="Capsicum">
-        <h3 data-en="Capsicum" data-hi="शिमला मिर्च" data-pa="ਸ਼ਿਮਲਾ ਮਿਰਚ">Capsicum</h3>
-        <p data-en="Uniform fruit size with excellent shelf life" data-hi="समान आकार और अच्छी शेल्फ लाइफ वाली किस्में" data-pa="ਇਕਸਾਰ ਆਕਾਰ ਅਤੇ ਵਧੀਆ ਸ਼ੈਲਫ ਲਾਈਫ ਵਾਲੀਆਂ ਕਿਸਮਾਂ">
-          Uniform fruit size with excellent shelf life
-        </p>
-      </div>
-
-      <div class="card product-item" data-category="pod">
-        <img src="assets/images/products/8.jpg" alt="Okra">
-        <h3 data-en="Okra" data-hi="भिंडी" data-pa="ਭਿੰਡੀ">Okra</h3>
-        <p data-en="High-producing tender pods with strong plants" data-hi="मज़बूत पौधों के साथ उच्च उत्पादन देने वाली मुलायम फलियाँ" data-pa="ਮਜ਼ਬੂਤ ਪੌਦਿਆਂ ਨਾਲ ਉੱਚ ਉਤਪਾਦਨ ਦੇਣ ਵਾਲੀਆਂ ਨਰਮ ਫਲੀਆਂ">
-          High-producing tender pods with strong plants
-        </p>
-      </div>
-
-      <div class="card product-item" data-category="gourds">
-        <img src="assets/images/products/9.jpg" alt="Bitter Gourd">
-        <h3 data-en="Bitter Gourd" data-hi="करेला" data-pa="ਕਰੇਲਾ">Bitter Gourd</h3>
-        <p data-en="Healthy vines with high fruit setting capacity" data-hi="मज़बूत बेलें और अधिक फल सेटिंग क्षमता" data-pa="ਮਜ਼ਬੂਤ ਬੇਲਾਂ ਅਤੇ ਵਧੀਆ ਫਲ ਸੈੱਟਿੰਗ ਸਮਰੱਥਾ">
-          Healthy vines with high fruit setting capacity
-        </p>
-      </div>
-
-      <div class="card product-item" data-category="gourds">
-        <img src="assets/images/products/10.jpg" alt="Ridge Gourd">
-        <h3 data-en="Ridge Gourd" data-hi="तोरी" data-pa="ਤੋਰੀ">Ridge Gourd</h3>
-        <p data-en="Long tender fruits suitable for multiple harvests" data-hi="लंबे और कोमल फल, कई बार कटाई के लिए उपयुक्त" data-pa="ਲੰਮੇ ਤੇ ਨਰਮ ਫਲ, ਕਈ ਵਾਰ ਕਟਾਈ ਲਈ ਉਚਿਤ">
-          Long tender fruits suitable for multiple harvests
-        </p>
-      </div>
-
-      <div class="card product-item" data-category="gourds">
-        <img src="assets/images/products/11.jpg" alt="Sponge Gourd">
-        <h3 data-en="Sponge Gourd" data-hi="तुरई" data-pa="ਤੁਰੀ">Sponge Gourd</h3>
-        <p data-en="Fast-growing climber with uniform fruit shape" data-hi="तेज़ी से बढ़ने वाली बेल, समान आकार के फलों के साथ" data-pa="ਤੇਜ਼ੀ ਨਾਲ ਵਧਣ ਵਾਲੀ ਬੇਲ, ਇਕਸਾਰ ਆਕਾਰ ਵਾਲੇ ਫਲਾਂ ਨਾਲ">
-          Fast-growing climber with uniform fruit shape
-        </p>
-      </div>
-
-      <div class="card product-item" data-category="cucurbits">
-        <img src="assets/images/products/12.jpg" alt="Cucumber">
-        <h3 data-en="Cucumber" data-hi="खीरा" data-pa="ਖੀਰਾ">Cucumber</h3>
-        <p data-en="Crisp fruits with excellent productivity" data-hi="कुरकुरे फल और उत्कृष्ट उत्पादन क्षमता" data-pa="ਕਰਾਰੇ ਫਲ ਅਤੇ ਸ਼ਾਨਦਾਰ ਉਤਪਾਦਨ ਸਮਰੱਥਾ">
-          Crisp fruits with excellent productivity
-        </p>
-      </div>
     </div>
   </section>
 
+  <!-- ── CONTACT ─────────────────────────────────── -->
   <section class="contact" id="contact">
-    <h2 class="section-title" data-en="Contact Us" data-hi="संपर्क करें" data-pa="ਸੰਪਰਕ ਕਰੋ">
+    <span class="section-eyebrow" style="color: rgba(255,255,255,0.45);"
+          data-en="Reach Out" data-hi="संपर्क करें" data-pa="ਸੰਪਰਕ ਕਰੋ">Reach Out</span>
+    <h2 class="section-title"
+        data-en="Contact Us" data-hi="संपर्क करें" data-pa="ਸੰਪਰਕ ਕਰੋ">
       Contact Us
     </h2>
 
-    <p>
-      <span data-en="Email:" data-hi="ईमेल:" data-pa="ਈਮੇਲ:">Email:</span>
-      <a href="mailto:Bharatseeds@gmail.com">Bharatseeds@gmail.com</a>
-    </p>
-
-    <p>
-      <span data-en="Phone:" data-hi="फोन:" data-pa="ਫੋਨ:">Phone:</span>
-      <a href="tel:+919876910382">+91 98769 10382</a>
-    </p>
-
-    <p>
-      <a href="https://www.google.com/maps?q=95,+Luv-kush+Market,+Bus+Stand,+Patiala,+Punjab+147001,+India"
-         target="_blank"
-         rel="noopener noreferrer"
-         data-en="95, Luv-kush Market, Bus Stand, Patiala, Punjab 147001, India"
-         data-hi="95, लव-कुश मार्केट, बस स्टैंड, पटियाला, पंजाब 147001, भारत"
-         data-pa="95, ਲਵ-ਕੁਸ਼ ਮਾਰਕੀਟ, ਬਸ ਸਟੈਂਡ, ਪਟਿਆਲਾ, ਪੰਜਾਬ 147001, ਭਾਰਤ">
-        95, Luv-kush Market, Bus Stand, Patiala, Punjab 147001, India
-      </a>
-    </p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <span class="label" data-en="Email" data-hi="ईमेल" data-pa="ਈਮੇਲ">Email</span>
+        <a href="mailto:Bharatseeds@gmail.com">Bharatseeds@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+        <span class="label" data-en="Phone" data-hi="फोन" data-pa="ਫੋਨ">Phone</span>
+        <a href="tel:+919876910382">+91 98769 10382</a>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <span class="label" data-en="Address" data-hi="पता" data-pa="ਪਤਾ">Address</span>
+        <a href="https://www.google.com/maps?q=95,+Luv-kush+Market,+Bus+Stand,+Patiala,+Punjab+147001,+India"
+           target="_blank" rel="noopener noreferrer"
+           data-en="95, Luv-kush Market, Bus Stand, Patiala, Punjab 147001"
+           data-hi="95, लव-कुश मार्केट, बस स्टैंड, पटियाला, पंजाब 147001"
+           data-pa="95, ਲਵ-ਕੁਸ਼ ਮਾਰਕੀਟ, ਬਸ ਸਟੈਂਡ, ਪਟਿਆਲਾ, ਪੰਜਾਬ 147001">
+          95, Luv-kush Market, Bus Stand, Patiala, Punjab 147001
+        </a>
+      </div>
+    </div>
 
     <div class="map-container">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.1446462136223!2d76.40226665324055!3d30.338452761924554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391028f3098c396d%3A0x86d84044a77a9594!2sBharat%20Seeds!5e0!3m2!1sen!2sin!4v1775980598095!5m2!1sen!2sin"
-        width="800"
-        height="300"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
   </section>
 
+  <!-- ── SOCIAL ───────────────────────────────────── -->
   <div class="social-icons">
-    <a href="https://wa.me/919876910382" target="_blank" rel="noopener noreferrer" class="whatsapp" aria-label="WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <a href="https://www.facebook.com/share/1JHaWWN5nT/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="Facebook">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-
-    <a href="https://www.youtube.com/@bharatseedspatiala" target="_blank" rel="noopener noreferrer" class="youtube" aria-label="YouTube">
-      <i class="fab fa-youtube"></i>
-    </a>
-
-    <a href="https://www.instagram.com/bharat_seeds_patiala?igsh=MXJlamliZmdmdXNpZQ==" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
+    <a href="https://wa.me/919876910382" target="_blank" rel="noopener noreferrer" class="whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.facebook.com/share/1JHaWWN5nT/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.youtube.com/@bharatseedspatiala" target="_blank" rel="noopener noreferrer" class="youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.instagram.com/bharat_seeds_patiala?igsh=MXJlamliZmdmdXNpZQ==" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
   </div>
 
-  <script src="assets/js/script.js?v=2"></script>
+  <script src="assets/js/script.js"></script>
   <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const selectedCategory = urlParams.get("category") || "all";
-
-    const filterButtons = document.querySelectorAll(".filter-btn");
+    const urlParams    = new URLSearchParams(window.location.search);
+    const selectedCat  = urlParams.get("category") || "all";
+    const filterBtns   = document.querySelectorAll(".filter-btn");
     const productItems = document.querySelectorAll(".product-item");
 
     function applyFilter(category) {
       productItems.forEach(item => {
-        const itemCategory = item.getAttribute("data-category");
-        const show = category === "all" || itemCategory === category;
-        item.style.display = show ? "block" : "none";
+        item.style.display = (category === "all" || item.dataset.category === category) ? "" : "none";
       });
-
-      filterButtons.forEach(btn => {
-        btn.classList.toggle("active", btn.dataset.category === category);
-      });
+      filterBtns.forEach(btn =>
+        btn.classList.toggle("active", btn.dataset.category === category)
+      );
     }
 
-    filterButtons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        applyFilter(btn.dataset.category);
-      });
-    });
-
-    applyFilter(selectedCategory);
+    filterBtns.forEach(btn => btn.addEventListener("click", () => applyFilter(btn.dataset.category)));
+    applyFilter(selectedCat);
   </script>
 </body>
 </html>

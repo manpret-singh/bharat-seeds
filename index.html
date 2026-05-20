@@ -4,225 +4,312 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bharat Seeds | Where Farmers Trust</title>
+  <meta name="description" content="Premium quality hybrid vegetable seeds for Indian farmers. Trusted since 1993.">
   <link rel="icon" href="minefavicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <header>
-  <div class="logo">BHARAT SEEDS</div>
+  <!-- ── HEADER ─────────────────────────────────── -->
+  <header id="siteHeader">
+    <a href="index.html" class="header-brand">
+      <img src="minefavicon.svg" alt="Bharat Seeds Logo" class="header-logo-img" type="image/svg+xml">
+      <div class="logo">BHARAT SEEDS</div>
+    </a>
 
-  <div class="header-right">
-    <select id="languageSelect" class="language-select" aria-label="Language selector">
-      <option value="en">EN</option>
-      <option value="hi">हिंदी</option>
-      <option value="pa">ਪੰਜਾਬੀ</option>
-    </select>
+    <nav id="navbar">
+      <a href="#" data-en="Home" data-hi="होम" data-pa="ਹੋਮ">Home</a>
+      <a href="#about" data-en="About" data-hi="परिचय" data-pa="ਬਾਰੇ">About</a>
+      <a href="#products" data-en="Products" data-hi="उत्पाद" data-pa="ਉਤਪਾਦ">Products</a>
+      <a href="#contact" data-en="Contact" data-hi="संपर्क" data-pa="ਸੰਪਰਕ">Contact</a>
+    </nav>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <i class="fas fa-bars"></i>
-    </button>
-  </div>
+    <div class="header-right">
+      <div class="lang-wrap">
+        <i class="fas fa-globe lang-globe"></i>
+        <select id="languageSelect" class="language-select" aria-label="Language selector">
+          <option value="en">EN</option>
+          <option value="hi">हिंदी</option>
+          <option value="pa">ਪੰਜਾਬੀ</option>
+        </select>
+        <i class="fas fa-chevron-down lang-chevron"></i>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
 
-  <nav id="navbar">
-    <a href="#" data-en="Home" data-hi="होम" data-pa="ਹੋਮ">Home</a>
-    <a href="#about" data-en="About" data-hi="परिचय" data-pa="ਬਾਰੇ">About</a>
-    <a href="#products" data-en="Products" data-hi="उत्पाद" data-pa="ਉਤਪਾਦ">Products</a>
-    <a href="#contact" data-en="Contact" data-hi="संपर्क" data-pa="ਸੰਪਰਕ">Contact</a>
-  </nav>
-</header>
-
+  <!-- ── HERO ───────────────────────────────────── -->
   <section class="hero">
+    <div class="hero-bg" id="heroBg"></div>
+
     <div class="hero-content">
+      <span class="hero-tag" data-en="Trusted Since 1993" data-hi="1993 से विश्वसनीय" data-pa="1993 ਤੋਂ ਭਰੋਸੇਮੰਦ">
+        Trusted Since 1993
+      </span>
+
       <h1 data-en="WHERE FARMERS TRUST" data-hi="जहां किसान भरोसा करते हैं" data-pa="ਜਿੱਥੇ ਕਿਸਾਨ ਭਰੋਸਾ ਕਰਦੇ ਹਨ">
         WHERE FARMERS TRUST
       </h1>
-      <p data-en="Premium Quality Hybrid Vegetable Seeds" data-hi="उच्च गुणवत्ता वाले हाइब्रिड सब्ज़ी बीज" data-pa="ਉੱਚ ਗੁਣਵੱਤਾ ਵਾਲੇ ਹਾਈਬ੍ਰਿਡ ਸਬਜ਼ੀ ਬੀਜ">
-        Premium Quality Hybrid Vegetable Seeds
+
+      <p data-en="Premium Quality Hybrid Vegetable Seeds for a Better Harvest"
+         data-hi="बेहतर उपज के लिए उच्च गुणवत्ता वाले हाइब्रिड सब्ज़ी बीज"
+         data-pa="ਵਧੀਆ ਉਪਜ ਲਈ ਉੱਚ ਗੁਣਵੱਤਾ ਵਾਲੇ ਹਾਈਬ੍ਰਿਡ ਸਬਜ਼ੀ ਬੀਜ">
+        Premium Quality Hybrid Vegetable Seeds for a Better Harvest
       </p>
-      <a href="products.html" class="btn" data-en="Explore Products" data-hi="उत्पाद देखें" data-pa="ਉਤਪਾਦ ਵੇਖੋ">
-        Explore Products
-      </a>
+
+      <div class="hero-actions">
+        <a href="products.html" class="btn-primary" data-en="Explore Products" data-hi="उत्पाद देखें" data-pa="ਉਤਪਾਦ ਵੇਖੋ">
+          Explore Products
+        </a>
+      </div>
     </div>
   </section>
 
+  <!-- ── STATS BAR ───────────────────────────────── -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <span class="stat-number" data-target="30" data-suffix="+">0+</span>
+      <span class="stat-label" data-en="Years of Trust" data-hi="वर्षों का भरोसा" data-pa="ਸਾਲਾਂ ਦਾ ਭਰੋਸਾ">Years of Trust</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-target="5000" data-suffix="+">0+</span>
+      <span class="stat-label" data-en="Customers Served" data-hi="ग्राहक सेवित" data-pa="ਗਾਹਕ ਸੇਵਿਤ">Customers Served</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-target="28" data-suffix="+">0+</span>
+      <span class="stat-label" data-en="Trusted Partners" data-hi="विश्वसनीय साझेदार" data-pa="ਭਰੋਸੇਮੰਦ ਸਾਥੀ">Trusted Partners</span>
+    </div>
+  </div>
+
+  <!-- ── ABOUT ───────────────────────────────────── -->
   <section class="section" id="about">
-    <h2 class="section-title" data-en="About Bharat Seeds" data-hi="भरत सीड्स के बारे में" data-pa="ਭਾਰਤ ਸੀਡਜ਼ ਬਾਰੇ">
+    <span class="section-eyebrow reveal" data-en="Our Story" data-hi="हमारी कहानी" data-pa="ਸਾਡੀ ਕਹਾਣੀ">Our Story</span>
+    <h2 class="section-title reveal reveal-delay-1"
+        data-en="About Bharat Seeds"
+        data-hi="भरत सीड्स के बारे में"
+        data-pa="ਭਾਰਤ ਸੀਡਜ਼ ਬਾਰੇ">
       About Bharat Seeds
     </h2>
 
-    <div class="about">
-      <img src="assets/images/bharatseedslogo.jpeg" alt="Bharat Seeds logo">
+    <div class="about-grid">
+      <div class="about-image-wrap reveal">
+        <img src="assets/images/bharatseedslogo.jpeg" alt="Bharat Seeds Logo">
+        <div class="about-badge">
+          <span class="badge-num">1993</span>
+          <span class="badge-text">Est.</span>
+        </div>
+      </div>
 
-      <div>
-        <h3 data-en="Trusted Seeds for Better Harvest" data-hi="बेहतर उपज के लिए विश्वसनीय बीज" data-pa="ਵਧੀਆ ਉਪਜ ਲਈ ਭਰੋਸੇਮੰਦ ਬੀਜ">
+      <div class="about-content reveal reveal-delay-2">
+        <h3 data-en="Trusted Seeds for Better Harvest"
+            data-hi="बेहतर उपज के लिए विश्वसनीय बीज"
+            data-pa="ਵਧੀਆ ਉਪਜ ਲਈ ਭਰੋਸੇਮੰਦ ਬੀਜ">
           Trusted Seeds for Better Harvest
         </h3>
 
-        <p data-en="Bharat Seeds provides high-quality hybrid vegetable seeds designed for better yield, disease resistance, and strong crop performance across India."
-           data-hi="भरत सीड्स उच्च गुणवत्ता वाले हाइब्रिड सब्ज़ी बीज प्रदान करता है, जो बेहतर उपज, रोग प्रतिरोध और मजबूत फसल प्रदर्शन के लिए बनाए गए हैं।"
-           data-pa="ਭਾਰਤ ਸੀਡਜ਼ ਉੱਚ ਗੁਣਵੱਤਾ ਵਾਲੇ ਹਾਈਬ੍ਰਿਡ ਸਬਜ਼ੀ ਬੀਜ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ, ਜੋ ਵਧੀਆ ਉਪਜ, ਬਿਮਾਰੀ ਪ੍ਰਤੀਰੋਧ ਅਤੇ ਮਜ਼ਬੂਤ ਫਸਲੀ ਪ੍ਰਦਰਸ਼ਨ ਲਈ ਬਣਾਏ ਗਏ ਹਨ।">
-          Bharat Seeds provides high-quality hybrid vegetable seeds designed for better yield, disease resistance, and strong crop performance across India.
+        <p data-en="Since 1993, Bharat Seeds has been serving the farming community with trust and dedication. Founded in Patiala, Punjab, by a family deeply connected to agriculture, the journey started with a small-scale seed business built on generations of farming knowledge and experience."
+           data-hi="1993 से, भरत सीड्स विश्वास और समर्पण के साथ किसान समुदाय की सेवा कर रहा है। पटियाला, पंजाब में कृषि से गहरे जुड़े एक परिवार द्वारा स्थापित, यह यात्रा पीढ़ियों के खेती के ज्ञान और अनुभव पर आधारित एक छोटे बीज व्यवसाय से शुरू हुई।"
+           data-pa="1993 ਤੋਂ, ਭਾਰਤ ਸੀਡਜ਼ ਵਿਸ਼ਵਾਸ ਅਤੇ ਸਮਰਪਣ ਨਾਲ ਕਿਸਾਨ ਭਾਈਚਾਰੇ ਦੀ ਸੇਵਾ ਕਰ ਰਿਹਾ ਹੈ। ਪਟਿਆਲਾ, ਪੰਜਾਬ ਵਿੱਚ ਖੇਤੀਬਾੜੀ ਨਾਲ ਡੂੰਘੇ ਜੁੜੇ ਇੱਕ ਪਰਿਵਾਰ ਦੁਆਰਾ ਸਥਾਪਿਤ, ਇਹ ਯਾਤਰਾ ਪੀੜ੍ਹੀਆਂ ਦੇ ਖੇਤੀ ਗਿਆਨ ਅਤੇ ਅਨੁਭਵ 'ਤੇ ਆਧਾਰਿਤ ਇੱਕ ਛੋਟੇ ਬੀਜ ਕਾਰੋਬਾਰ ਤੋਂ ਸ਼ੁਰੂ ਹੋਈ।">
+          Since 1993, Bharat Seeds has been serving the farming community with trust and dedication. Founded in Patiala, Punjab, by a family deeply connected to agriculture, the journey started with a small-scale seed business built on generations of farming knowledge and experience.
         </p>
 
-        <p data-en="We partner with farmers, distributors, and agricultural experts to deliver trusted seed solutions for sustainable farming."
-           data-hi="हम किसानों, वितरकों और कृषि विशेषज्ञों के साथ मिलकर टिकाऊ खेती के लिए भरोसेमंद बीज समाधान उपलब्ध कराते हैं।"
-           data-pa="ਅਸੀਂ ਕਿਸਾਨਾਂ, ਡਿਸਟ੍ਰੀਬਿਊਟਰਾਂ ਅਤੇ ਖੇਤੀਬਾੜੀ ਵਿਸ਼ੇਸ਼ਗਿਆਂ ਨਾਲ ਮਿਲ ਕੇ ਟਿਕਾਊ ਖੇਤੀ ਲਈ ਭਰੋਸੇਮੰਦ ਬੀਜ ਹੱਲ ਪ੍ਰਦਾਨ ਕਰਦੇ ਹਾਂ।">
-          We partner with farmers, distributors, and agricultural experts to deliver trusted seed solutions for sustainable farming.
+        <p data-en="By staying closely connected with farmers over the years, we understood the changing needs of modern agriculture and expanded Bharat Seeds into a farmer-oriented company focused on providing quality seeds, farming products, and reliable agricultural solutions."
+           data-hi="वर्षों से किसानों के साथ घनिष्ठ संपर्क बनाए रखते हुए, हमने आधुनिक कृषि की बदलती जरूरतों को समझा और भरत सीड्स को गुणवत्तापूर्ण बीज, कृषि उत्पाद और विश्वसनीय कृषि समाधान उपलब्ध कराने पर केंद्रित एक किसान-उन्मुख कंपनी के रूप में विकसित किया।"
+           data-pa="ਸਾਲਾਂ ਦੌਰਾਨ ਕਿਸਾਨਾਂ ਨਾਲ ਨੇੜਿਓਂ ਜੁੜੇ ਰਹਿ ਕੇ, ਅਸੀਂ ਆਧੁਨਿਕ ਖੇਤੀਬਾੜੀ ਦੀਆਂ ਬਦਲਦੀਆਂ ਲੋੜਾਂ ਨੂੰ ਸਮਝਿਆ ਅਤੇ ਭਾਰਤ ਸੀਡਜ਼ ਨੂੰ ਗੁਣਵੱਤਾ ਵਾਲੇ ਬੀਜ, ਖੇਤੀ ਉਤਪਾਦ ਅਤੇ ਭਰੋਸੇਮੰਦ ਖੇਤੀ ਹੱਲ ਦੇਣ 'ਤੇ ਕੇਂਦ੍ਰਿਤ ਕਿਸਾਨ-ਅਨੁਕੂਲ ਕੰਪਨੀ ਵਿੱਚ ਵਿਸਤਾਰ ਕੀਤਾ।">
+          By staying closely connected with farmers over the years, we understood the changing needs of modern agriculture and expanded Bharat Seeds into a farmer-oriented company focused on providing quality seeds, farming products, and reliable agricultural solutions.
         </p>
       </div>
     </div>
   </section>
 
-  <section class="section" id="products">
-    <h2 class="section-title" data-en="Our Categories" data-hi="हमारी श्रेणियाँ" data-pa="ਸਾਡੀਆਂ ਸ਼੍ਰੇਣੀਆਂ">
+  <!-- ── CATEGORIES ──────────────────────────────── -->
+  <section class="section section-alt" id="products">
+    <span class="section-eyebrow reveal" data-en="What We Offer" data-hi="हम क्या प्रदान करते हैं" data-pa="ਅਸੀਂ ਕੀ ਪੇਸ਼ ਕਰਦੇ ਹਾਂ">What We Offer</span>
+    <h2 class="section-title reveal reveal-delay-1"
+        data-en="Our Categories"
+        data-hi="हमारी श्रेणियाँ"
+        data-pa="ਸਾਡੀਆਂ ਸ਼੍ਰੇਣੀਆਂ">
       Our Categories
     </h2>
 
-    <div class="products">
-      <a href="products.html?category=leafy" class="card category-card">
-        <img src="assets/images/categories/1.jpg" alt="Leafy Vegetables">
-        <h3 data-en="Leafy Vegetables" data-hi="पत्तेदार सब्जियाँ" data-pa="ਪੱਤੇਦਾਰ ਸਬਜ਼ੀਆਂ">Leafy Vegetables</h3>
-        <p data-en="Fenugreek, Coriander, Amaranthus, Lettuce" data-hi="मेथी, धनिया, चौलाई, लेट्यूस" data-pa="ਮੇਥੀ, ਧਨੀਆ, ਚੌਲਾਈ, ਲੈਟਸ">
-          Fenugreek, Coriander, Amaranthus, Lettuce
-        </p>
+    <div class="products" id="categoryGrid">
+      <a href="products.html?category=vegetable" class="card category-card reveal reveal-delay-1">
+        <div class="card-img-wrap">
+          <img src="assets/images/categories/1.png" alt="Vegetable &amp; Fruit Seeds">
+        </div>
+        <div class="card-body">
+          <h3 data-en="Vegetable &amp; Fruit Seeds" data-hi="सब्जी और फल के बीज" data-pa="ਸਬਜ਼ੀ ਅਤੇ ਫਲ ਦੇ ਬੀਜ">Vegetable &amp; Fruit Seeds</h3>
+        </div>
       </a>
 
-      <a href="products.html?category=solanaceous" class="card category-card">
-        <img src="assets/images/categories/2.jpg" alt="Solanaceous Crops">
-        <h3 data-en="Solanaceous Crops" data-hi="सोलनैशियस फसलें" data-pa="ਸੋਲਨੇਸ਼ੀਅਸ ਫਸਲਾਂ">Solanaceous Crops</h3>
-        <p data-en="Brinjal, Chilli, Capsicum" data-hi="बैंगन, मिर्च, शिमला मिर्च" data-pa="ਬੈਂਗਣ, ਮਿਰਚ, ਸ਼ਿਮਲਾ ਮਿਰਚ">
-          Brinjal, Chilli, Capsicum
-        </p>
+      <a href="products.html?category=field" class="card category-card reveal reveal-delay-2">
+        <div class="card-img-wrap">
+          <img src="assets/images/categories/2.png" alt="Field Crop Seeds">
+        </div>
+        <div class="card-body">
+          <h3 data-en="Field Crop Seeds" data-hi="खेत फसल बीज" data-pa="ਖੇਤ ਫਸਲ ਬੀਜ">Field Crop Seeds</h3>
+        </div>
       </a>
 
-      <a href="products.html?category=gourds" class="card category-card">
-        <img src="assets/images/categories/3.jpg" alt="Gourds">
-        <h3 data-en="Gourds" data-hi="लौकी वर्ग की फसलें" data-pa="ਲੌਕੀ ਵਰਗ ਦੀਆਂ ਫਸਲਾਂ">Gourds</h3>
-        <p data-en="Bitter Gourd, Ridge Gourd, Sponge Gourd" data-hi="करेला, तोरी, तुरई" data-pa="ਕਰੇਲਾ, ਤੋਰੀ, ਤੁਰੀ">
-          Bitter Gourd, Ridge Gourd, Sponge Gourd
-        </p>
+      <a href="products.html?category=tools" class="card category-card reveal reveal-delay-3">
+        <div class="card-img-wrap">
+          <img src="assets/images/categories/3.png" alt="Gardening &amp; Farming Tools">
+        </div>
+        <div class="card-body">
+          <h3 data-en="Gardening &amp; Farming Tools" data-hi="बागवानी और खेती के उपकरण" data-pa="ਬਾਗਬਾਨੀ ਅਤੇ ਖੇਤੀ ਸੰਦ">Gardening &amp; Farming Tools</h3>
+        </div>
       </a>
 
-      <a href="products.html?category=cucurbits" class="card category-card">
-        <img src="assets/images/categories/4.jpg" alt="Cucurbits">
-        <h3 data-en="Cucurbits" data-hi="कद्दूवर्गीय फसलें" data-pa="ਕੱਦੂਵਰਗੀ ਫਸਲਾਂ">Cucurbits</h3>
-        <p data-en="Cucumber and related varieties" data-hi="खीरा और संबंधित किस्में" data-pa="ਖੀਰਾ ਅਤੇ ਸੰਬੰਧਿਤ ਕਿਸਮਾਂ">
-          Cucumber and related varieties
-        </p>
+      <a href="products.html?category=mulching" class="card category-card reveal reveal-delay-3">
+        <div class="card-img-wrap">
+          <img src="assets/images/categories/4.png" alt="Mulching &amp; Nursery Supplies">
+        </div>
+        <div class="card-body">
+          <h3 data-en="Mulching &amp; Nursery Supplies" data-hi="मल्चिंग और नर्सरी सामग्री" data-pa="ਮਲਚਿੰਗ ਅਤੇ ਨਰਸਰੀ ਸਮੱਗਰੀ">Mulching &amp; Nursery Supplies</h3>
+        </div>
       </a>
 
-      <a href="products.html?category=pod" class="card category-card">
-        <img src="assets/images/categories/5.jpg" alt="Pod Vegetables">
-        <h3 data-en="Pod Vegetables" data-hi="फलीदार सब्जियाँ" data-pa="ਫਲੀਦਾਰ ਸਬਜ਼ੀਆਂ">Pod Vegetables</h3>
-        <p data-en="Okra and similar varieties" data-hi="भिंडी और समान किस्में" data-pa="ਭਿੰਡੀ ਅਤੇ ਸਮਾਨ ਕਿਸਮਾਂ">
-          Okra and similar varieties
-        </p>
+      <a href="products.html?category=sprayers" class="card category-card reveal reveal-delay-4">
+        <div class="card-img-wrap">
+          <img src="assets/images/categories/5.png" alt="Sprayers &amp; Watering Tools">
+        </div>
+        <div class="card-body">
+          <h3 data-en="Sprayers &amp; Watering Tools" data-hi="स्प्रेयर और सिंचाई उपकरण" data-pa="ਸਪ੍ਰੇਅਰ ਅਤੇ ਸਿੰਚਾਈ ਸੰਦ">Sprayers &amp; Watering Tools</h3>
+        </div>
       </a>
     </div>
   </section>
 
+  <!-- ── PARTNERS MARQUEE ────────────────────────── -->
   <section class="partners-section">
-    <h2 class="section-title" data-en="Our Partners" data-hi="हमारे साझेदार" data-pa="ਸਾਡੇ ਸਾਥੀ">
+    <span class="section-eyebrow reveal" data-en="We Work With" data-hi="हम इनके साथ काम करते हैं" data-pa="ਅਸੀਂ ਇਹਨਾਂ ਨਾਲ ਕੰਮ ਕਰਦੇ ਹਾਂ">We Work With</span>
+    <h2 class="section-title reveal reveal-delay-1"
+        data-en="Our Partners"
+        data-hi="हमारे साझेदार"
+        data-pa="ਸਾਡੇ ਸਾਥੀ">
       Our Partners
     </h2>
 
-    <div class="partners-grid" id="partnersGrid">
-      <img src="assets/images/partners/1.jpeg" class="partner-logo" alt="Partner logo 1">
-      <img src="assets/images/partners/2.jpeg" class="partner-logo" alt="Partner logo 2">
-      <img src="assets/images/partners/3.jpeg" class="partner-logo" alt="Partner logo 3">
-      <img src="assets/images/partners/4.jpeg" class="partner-logo" alt="Partner logo 4">
-      <img src="assets/images/partners/5.jpeg" class="partner-logo" alt="Partner logo 5">
-      <img src="assets/images/partners/6.jpeg" class="partner-logo" alt="Partner logo 6">
-
-      <img src="assets/images/partners/7.jpeg" class="partner-logo hidden-partner" alt="Partner logo 7">
-      <img src="assets/images/partners/8.jpeg" class="partner-logo hidden-partner" alt="Partner logo 8">
-      <img src="assets/images/partners/9.jpeg" class="partner-logo hidden-partner" alt="Partner logo 9">
-      <img src="assets/images/partners/10.jpeg" class="partner-logo hidden-partner" alt="Partner logo 10">
-      <img src="assets/images/partners/11.jpeg" class="partner-logo hidden-partner" alt="Partner logo 11">
-      <img src="assets/images/partners/12.jpeg" class="partner-logo hidden-partner" alt="Partner logo 12">
-      <img src="assets/images/partners/13.jpeg" class="partner-logo hidden-partner" alt="Partner logo 13">
-      <img src="assets/images/partners/14.jpeg" class="partner-logo hidden-partner" alt="Partner logo 14">
-      <img src="assets/images/partners/15.jpeg" class="partner-logo hidden-partner" alt="Partner logo 15">
-      <img src="assets/images/partners/16.jpeg" class="partner-logo hidden-partner" alt="Partner logo 16">
-      <img src="assets/images/partners/17.jpeg" class="partner-logo hidden-partner" alt="Partner logo 17">
-      <img src="assets/images/partners/18.jpeg" class="partner-logo hidden-partner" alt="Partner logo 18">
-      <img src="assets/images/partners/19.jpeg" class="partner-logo hidden-partner" alt="Partner logo 19">
-      <img src="assets/images/partners/20.jpeg" class="partner-logo hidden-partner" alt="Partner logo 20">
-      <img src="assets/images/partners/21.jpeg" class="partner-logo hidden-partner" alt="Partner logo 21">
-      <img src="assets/images/partners/22.jpeg" class="partner-logo hidden-partner" alt="Partner logo 22">
-      <img src="assets/images/partners/23.jpeg" class="partner-logo hidden-partner" alt="Partner logo 23">
-      <img src="assets/images/partners/24.jpeg" class="partner-logo hidden-partner" alt="Partner logo 24">
-      <img src="assets/images/partners/25.jpeg" class="partner-logo hidden-partner" alt="Partner logo 25">
-      <img src="assets/images/partners/26.jpeg" class="partner-logo hidden-partner" alt="Partner logo 26">
-      <img src="assets/images/partners/27.jpeg" class="partner-logo hidden-partner" alt="Partner logo 27">
-      <img src="assets/images/partners/28.jpeg" class="partner-logo hidden-partner" alt="Partner logo 28">
+    <div class="marquee-container">
+      <div class="marquee-track">
+        <div class="marquee-item"><img src="assets/images/partners/1.jpeg" alt="Partner 1"></div>
+        <div class="marquee-item"><img src="assets/images/partners/2.jpeg" alt="Partner 2"></div>
+        <div class="marquee-item"><img src="assets/images/partners/3.jpeg" alt="Partner 3"></div>
+        <div class="marquee-item"><img src="assets/images/partners/4.jpeg" alt="Partner 4"></div>
+        <div class="marquee-item"><img src="assets/images/partners/5.jpeg" alt="Partner 5"></div>
+        <div class="marquee-item"><img src="assets/images/partners/6.jpeg" alt="Partner 6"></div>
+        <div class="marquee-item"><img src="assets/images/partners/7.jpeg" alt="Partner 7"></div>
+        <div class="marquee-item"><img src="assets/images/partners/8.jpeg" alt="Partner 8"></div>
+        <div class="marquee-item"><img src="assets/images/partners/9.jpeg" alt="Partner 9"></div>
+        <div class="marquee-item"><img src="assets/images/partners/10.jpeg" alt="Partner 10"></div>
+        <div class="marquee-item"><img src="assets/images/partners/11.jpeg" alt="Partner 11"></div>
+        <div class="marquee-item"><img src="assets/images/partners/12.jpeg" alt="Partner 12"></div>
+        <div class="marquee-item"><img src="assets/images/partners/13.jpeg" alt="Partner 13"></div>
+        <div class="marquee-item"><img src="assets/images/partners/14.jpeg" alt="Partner 14"></div>
+        <div class="marquee-item"><img src="assets/images/partners/15.jpeg" alt="Partner 15"></div>
+        <div class="marquee-item"><img src="assets/images/partners/16.jpeg" alt="Partner 16"></div>
+        <div class="marquee-item"><img src="assets/images/partners/17.jpeg" alt="Partner 17"></div>
+        <div class="marquee-item"><img src="assets/images/partners/18.jpeg" alt="Partner 18"></div>
+        <div class="marquee-item"><img src="assets/images/partners/19.jpeg" alt="Partner 19"></div>
+        <div class="marquee-item"><img src="assets/images/partners/20.jpeg" alt="Partner 20"></div>
+        <div class="marquee-item"><img src="assets/images/partners/21.jpeg" alt="Partner 21"></div>
+        <div class="marquee-item"><img src="assets/images/partners/22.jpeg" alt="Partner 22"></div>
+        <div class="marquee-item"><img src="assets/images/partners/23.jpeg" alt="Partner 23"></div>
+        <div class="marquee-item"><img src="assets/images/partners/24.jpeg" alt="Partner 24"></div>
+        <div class="marquee-item"><img src="assets/images/partners/25.jpeg" alt="Partner 25"></div>
+        <div class="marquee-item"><img src="assets/images/partners/26.jpeg" alt="Partner 26"></div>
+        <div class="marquee-item"><img src="assets/images/partners/27.jpeg" alt="Partner 27"></div>
+        <div class="marquee-item"><img src="assets/images/partners/28.jpeg" alt="Partner 28"></div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-item"><img src="assets/images/partners/1.jpeg" alt="Partner 1"></div>
+        <div class="marquee-item"><img src="assets/images/partners/2.jpeg" alt="Partner 2"></div>
+        <div class="marquee-item"><img src="assets/images/partners/3.jpeg" alt="Partner 3"></div>
+        <div class="marquee-item"><img src="assets/images/partners/4.jpeg" alt="Partner 4"></div>
+        <div class="marquee-item"><img src="assets/images/partners/5.jpeg" alt="Partner 5"></div>
+        <div class="marquee-item"><img src="assets/images/partners/6.jpeg" alt="Partner 6"></div>
+        <div class="marquee-item"><img src="assets/images/partners/7.jpeg" alt="Partner 7"></div>
+        <div class="marquee-item"><img src="assets/images/partners/8.jpeg" alt="Partner 8"></div>
+        <div class="marquee-item"><img src="assets/images/partners/9.jpeg" alt="Partner 9"></div>
+        <div class="marquee-item"><img src="assets/images/partners/10.jpeg" alt="Partner 10"></div>
+        <div class="marquee-item"><img src="assets/images/partners/11.jpeg" alt="Partner 11"></div>
+        <div class="marquee-item"><img src="assets/images/partners/12.jpeg" alt="Partner 12"></div>
+        <div class="marquee-item"><img src="assets/images/partners/13.jpeg" alt="Partner 13"></div>
+        <div class="marquee-item"><img src="assets/images/partners/14.jpeg" alt="Partner 14"></div>
+        <div class="marquee-item"><img src="assets/images/partners/15.jpeg" alt="Partner 15"></div>
+        <div class="marquee-item"><img src="assets/images/partners/16.jpeg" alt="Partner 16"></div>
+        <div class="marquee-item"><img src="assets/images/partners/17.jpeg" alt="Partner 17"></div>
+        <div class="marquee-item"><img src="assets/images/partners/18.jpeg" alt="Partner 18"></div>
+        <div class="marquee-item"><img src="assets/images/partners/19.jpeg" alt="Partner 19"></div>
+        <div class="marquee-item"><img src="assets/images/partners/20.jpeg" alt="Partner 20"></div>
+        <div class="marquee-item"><img src="assets/images/partners/21.jpeg" alt="Partner 21"></div>
+        <div class="marquee-item"><img src="assets/images/partners/22.jpeg" alt="Partner 22"></div>
+        <div class="marquee-item"><img src="assets/images/partners/23.jpeg" alt="Partner 23"></div>
+        <div class="marquee-item"><img src="assets/images/partners/24.jpeg" alt="Partner 24"></div>
+        <div class="marquee-item"><img src="assets/images/partners/25.jpeg" alt="Partner 25"></div>
+        <div class="marquee-item"><img src="assets/images/partners/26.jpeg" alt="Partner 26"></div>
+        <div class="marquee-item"><img src="assets/images/partners/27.jpeg" alt="Partner 27"></div>
+        <div class="marquee-item"><img src="assets/images/partners/28.jpeg" alt="Partner 28"></div>
+      </div>
     </div>
-
-    <button class="view-btn" onclick="togglePartners()" id="viewBtn" type="button" data-en="View All" data-hi="सभी देखें" data-pa="ਸਾਰੇ ਵੇਖੋ">
-      View All
-    </button>
   </section>
 
+  <!-- ── CONTACT ─────────────────────────────────── -->
   <section class="contact" id="contact">
-    <h2 class="section-title" data-en="Contact Us" data-hi="संपर्क करें" data-pa="ਸੰਪਰਕ ਕਰੋ">
+    <span class="section-eyebrow reveal" style="color: rgba(255,255,255,0.45);"
+          data-en="Reach Out" data-hi="संपर्क करें" data-pa="ਸੰਪਰਕ ਕਰੋ">Reach Out</span>
+    <h2 class="section-title reveal reveal-delay-1"
+        data-en="Contact Us" data-hi="संपर्क करें" data-pa="ਸੰਪਰਕ ਕਰੋ">
       Contact Us
     </h2>
 
-    <p>
-      <span data-en="Email:" data-hi="ईमेल:" data-pa="ਈਮੇਲ:">Email:</span>
-      <a href="mailto:Bharatseeds@gmail.com">Bharatseeds@gmail.com</a>
-    </p>
+    <div class="contact-grid">
+      <div class="contact-item reveal reveal-delay-1">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <span class="label" data-en="Email" data-hi="ईमेल" data-pa="ਈਮੇਲ">Email</span>
+        <a href="mailto:Bharatseeds@gmail.com">Bharatseeds@gmail.com</a>
+      </div>
+      <div class="contact-item reveal reveal-delay-2">
+        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+        <span class="label" data-en="Phone" data-hi="फोन" data-pa="ਫੋਨ">Phone</span>
+        <a href="tel:+919876910382">+91 98769 10382</a>
+      </div>
+      <div class="contact-item reveal reveal-delay-3">
+        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <span class="label" data-en="Address" data-hi="पता" data-pa="ਪਤਾ">Address</span>
+        <a href="https://www.google.com/maps?q=95,+Luv-kush+Market,+Bus+Stand,+Patiala,+Punjab+147001,+India"
+           target="_blank" rel="noopener noreferrer"
+           data-en="95, Luv-kush Market, Bus Stand, Patiala, Punjab 147001"
+           data-hi="95, लव-कुश मार्केट, बस स्टैंड, पटियाला, पंजाब 147001"
+           data-pa="95, ਲਵ-ਕੁਸ਼ ਮਾਰਕੀਟ, ਬਸ ਸਟੈਂਡ, ਪਟਿਆਲਾ, ਪੰਜਾਬ 147001">
+          95, Luv-kush Market, Bus Stand, Patiala, Punjab 147001
+        </a>
+      </div>
+    </div>
 
-    <p>
-      <span data-en="Phone:" data-hi="फोन:" data-pa="ਫੋਨ:">Phone:</span>
-      <a href="tel:+919876910382">+91 98769 10382</a>
-    </p>
-
-    <p>
-      <a href="https://www.google.com/maps?q=95,+Luv-kush+Market,+Bus+Stand,+Patiala,+Punjab+147001,+India" target="_blank" rel="noopener noreferrer"
-         data-en="95, Luv-kush Market, Bus Stand, Patiala, Punjab 147001, India"
-         data-hi="95, लव-कुश मार्केट, बस स्टैंड, पटियाला, पंजाब 147001, भारत"
-         data-pa="95, ਲਵ-ਕੁਸ਼ ਮਾਰਕੀਟ, ਬਸ ਸਟੈਂਡ, ਪਟਿਆਲਾ, ਪੰਜਾਬ 147001, ਭਾਰਤ">
-        95, Luv-kush Market, Bus Stand, Patiala, Punjab 147001, India
-      </a>
-    </p>
-
-    <div class="map-container">
+    <div class="map-container reveal">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.1446462136223!2d76.40226665324055!3d30.338452761924554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391028f3098c396d%3A0x86d84044a77a9594!2sBharat%20Seeds!5e0!3m2!1sen!2sin!4v1775980598095!5m2!1sen!2sin"
-        width="800"
-        height="300"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
   </section>
 
+  <!-- ── FOOTER ─────────────────────────────────── -->
   <footer>
+    <p class="footer-brand">BHARAT SEEDS</p>
     <p data-en="GSTIN: 03AAJFB7450Q1Z3" data-hi="जीएसटीआईएन: 03AAJFB7450Q1Z3" data-pa="ਜੀਐਸਟੀਈਐਨ: 03AAJFB7450Q1Z3">GSTIN: 03AAJFB7450Q1Z3</p>
-    <p data-en="Bharat Seeds | Since 1993" data-hi="भरत सीड्स | 1993 से" data-pa="ਭਾਰਤ ਸੀਡਜ਼ | 1993 ਤੋਂ">Bharat Seeds | Since 1993</p>
+    <p data-en="© 2025 Bharat Seeds. Trusted Since 1993." data-hi="© 2025 भरत सीड्स। 1993 से विश्वसनीय।" data-pa="© 2025 ਭਾਰਤ ਸੀਡਜ਼। 1993 ਤੋਂ ਭਰੋਸੇਮੰਦ।">© 2025 Bharat Seeds. Trusted Since 1993.</p>
   </footer>
 
+  <!-- ── SOCIAL ───────────────────────────────────── -->
   <div class="social-icons">
-    <a href="https://wa.me/919876910382" target="_blank" rel="noopener noreferrer" class="whatsapp" aria-label="WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <a href="https://www.facebook.com/share/1JHaWWN5nT/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="Facebook">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-
-    <a href="https://www.youtube.com/@bharatseedspatiala" target="_blank" rel="noopener noreferrer" class="youtube" aria-label="YouTube">
-      <i class="fab fa-youtube"></i>
-    </a>
-
-    <a href="https://www.instagram.com/bharat_seeds_patiala?igsh=MXJlamliZmdmdXNpZQ==" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
+    <a href="https://wa.me/919876910382" target="_blank" rel="noopener noreferrer" class="whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.facebook.com/share/1JHaWWN5nT/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.youtube.com/@bharatseedspatiala" target="_blank" rel="noopener noreferrer" class="youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.instagram.com/bharat_seeds_patiala?igsh=MXJlamliZmdmdXNpZQ==" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
   </div>
 
   <script src="assets/js/script.js"></script>
