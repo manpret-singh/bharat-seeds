@@ -126,6 +126,7 @@ header.scrolled {
   color: var(--white);
   letter-spacing: 3px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .logo-link {
@@ -180,55 +181,117 @@ nav a:hover::after {
   margin-left: 40px;
 }
 
-/* Language selector wrapper */
-.lang-wrap {
+/* ── CUSTOM LANGUAGE DROPDOWN ────────────────────── */
+.lang-dropdown {
   position: relative;
+}
+
+.lang-trigger {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
   background: rgba(255, 255, 255, 0.09);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 8px;
-  padding: 0 10px;
+  padding: 8px 12px;
   cursor: pointer;
-  transition: var(--trans);
-}
-
-.lang-wrap:hover {
-  background: rgba(255, 255, 255, 0.16);
-  border-color: rgba(255, 255, 255, 0.3);
-}
-
-.lang-globe {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.6);
-  pointer-events: none;
-}
-
-.lang-chevron {
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.5);
-  pointer-events: none;
-}
-
-.language-select {
-  background: transparent;
   color: #fff;
-  border: none;
-  padding: 8px 2px;
+  font-family: 'DM Sans', sans-serif;
   font-size: 13px;
   font-weight: 500;
-  font-family: 'DM Sans', sans-serif;
-  cursor: pointer;
-  outline: none;
-  -webkit-appearance: none;
-  appearance: none;
-  letter-spacing: 0.3px;
+  transition: var(--trans);
+  white-space: nowrap;
 }
 
-.language-select option {
-  color: #222;
-  background: #fff;
+.lang-trigger:hover,
+.lang-trigger[aria-expanded="true"] {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.32);
+}
+
+.lang-trigger i:first-child {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.lang-chev {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.45);
+  transition: transform 0.22s ease;
+}
+
+.lang-trigger[aria-expanded="true"] .lang-chev {
+  transform: rotate(180deg);
+}
+
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background: #0d2818;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  list-style: none;
+  min-width: 168px;
+  opacity: 0;
+  transform: translateY(-8px) scale(0.97);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 500;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+.lang-menu.open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: all;
+}
+
+.lang-opt {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 18px;
+  cursor: pointer;
+  transition: background 0.15s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.lang-opt:last-child {
+  border-bottom: none;
+}
+
+.lang-opt:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.lang-opt.active {
+  background: rgba(217, 150, 30, 0.1);
+}
+
+.lang-code {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--gold-lt);
+  min-width: 22px;
+}
+
+.lang-name {
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.lang-opt.active .lang-name,
+.lang-opt:hover .lang-name {
+  color: #fff;
+}
+
+/* hidden native select kept for JS compat */
+.language-select {
+  display: none;
 }
 
 .menu-toggle {
@@ -477,7 +540,7 @@ nav a:hover::after {
 
 /* ── SECTIONS ────────────────────────────────────── */
 .section {
-  padding: 100px 60px;
+  padding: 72px 60px;
   background: var(--cream);
 }
 
@@ -491,7 +554,7 @@ nav a:hover::after {
   font-weight: 700;
   color: var(--g-dark);
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 44px;
   display: block;
   position: relative;
 }
@@ -699,7 +762,7 @@ nav a:hover::after {
 
 /* ── PARTNERS MARQUEE ────────────────────────────── */
 .partners-section {
-  padding: 80px 0;
+  padding: 60px 0;
   background: var(--white);
   overflow: hidden;
 }
@@ -765,7 +828,7 @@ nav a:hover::after {
 /* ── CONTACT ─────────────────────────────────────── */
 .contact {
   background: var(--g-dark);
-  padding: 100px 60px;
+  padding: 72px 60px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -1098,8 +1161,10 @@ footer .footer-brand {
   }
 
   .about-badge {
-    right: 0;
-    bottom: -16px;
+    right: -18px;
+    bottom: -18px;
+    width: 100px;
+    height: 100px;
   }
 
   .contact-grid {
@@ -1158,6 +1223,16 @@ footer .footer-brand {
     display: block;
   }
 
+  .logo {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+
+  .header-logo-img {
+    width: 32px;
+    height: 32px;
+  }
+
   .hero-content h1 {
     font-size: 42px;
   }
@@ -1168,7 +1243,7 @@ footer .footer-brand {
 
   .section,
   .partners-section {
-    padding: 70px 20px;
+    padding: 50px 20px;
   }
 
   .section-title {
@@ -1201,7 +1276,7 @@ footer .footer-brand {
   }
 
   .contact {
-    padding: 70px 20px;
+    padding: 50px 20px;
   }
 
   .map-container iframe {
