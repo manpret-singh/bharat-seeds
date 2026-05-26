@@ -26,6 +26,18 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ── LANGUAGE ──────────────────────────────────── */
+  const langDropdown = document.getElementById("langDropdown");
+  const langTrigger  = document.getElementById("langTrigger");
+  const langMenu     = document.getElementById("langMenu");
+  const langCurrent  = document.getElementById("langCurrent");
+  const langOpts     = document.querySelectorAll(".lang-opt");
+  const langLabels   = { en: "EN", hi: "हि", pa: "ਪੰ" };
+
+  function syncLangUI(lang) {
+    if (langCurrent) langCurrent.textContent = langLabels[lang] || "EN";
+    langOpts.forEach(o => o.classList.toggle("active", o.dataset.lang === lang));
+  }
+
   function applyLanguage(lang) {
     document.documentElement.lang = lang;
     localStorage.setItem("language", lang);
@@ -36,8 +48,35 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     if (languageSelect) languageSelect.value = lang;
+    syncLangUI(lang);
   }
 
+  /* Custom dropdown open/close */
+  if (langTrigger && langMenu) {
+    langTrigger.addEventListener("click", e => {
+      e.stopPropagation();
+      const isOpen = langMenu.classList.toggle("open");
+      langTrigger.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    langOpts.forEach(opt => {
+      opt.addEventListener("click", () => {
+        const lang = opt.dataset.lang;
+        applyLanguage(lang);
+        langMenu.classList.remove("open");
+        langTrigger.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.addEventListener("click", e => {
+      if (!langDropdown || !langDropdown.contains(e.target)) {
+        langMenu.classList.remove("open");
+        if (langTrigger) langTrigger.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
+  /* Fallback: native select still works if present */
   if (languageSelect) {
     languageSelect.addEventListener("change", () => applyLanguage(languageSelect.value));
   }
