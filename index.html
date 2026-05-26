@@ -26,14 +26,26 @@
     </nav>
 
     <div class="header-right">
-      <div class="lang-wrap">
-        <i class="fas fa-globe lang-globe"></i>
-        <select id="languageSelect" class="language-select" aria-label="Language selector">
-          <option value="en">EN</option>
-          <option value="hi">हिंदी</option>
-          <option value="pa">ਪੰਜਾਬੀ</option>
-        </select>
-        <i class="fas fa-chevron-down lang-chevron"></i>
+      <div class="lang-dropdown" id="langDropdown">
+        <button class="lang-trigger" id="langTrigger" type="button" aria-expanded="false" aria-haspopup="listbox">
+          <i class="fas fa-globe"></i>
+          <span id="langCurrent">EN</span>
+          <i class="fas fa-chevron-down lang-chev"></i>
+        </button>
+        <ul class="lang-menu" id="langMenu" role="listbox">
+          <li class="lang-opt active" data-lang="en" role="option">
+            <span class="lang-code">EN</span>
+            <span class="lang-name">English</span>
+          </li>
+          <li class="lang-opt" data-lang="hi" role="option">
+            <span class="lang-code">हि</span>
+            <span class="lang-name">हिंदी</span>
+          </li>
+          <li class="lang-opt" data-lang="pa" role="option">
+            <span class="lang-code">ਪੰ</span>
+            <span class="lang-name">ਪੰਜਾਬੀ</span>
+          </li>
+        </ul>
       </div>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
         <i class="fas fa-bars"></i>
@@ -269,7 +281,7 @@
       <div class="contact-item reveal reveal-delay-1">
         <div class="contact-icon"><i class="fas fa-envelope"></i></div>
         <span class="label" data-en="Email" data-hi="ईमेल" data-pa="ਈਮੇਲ">Email</span>
-        <a href="mailto:Bharatseeds@gmail.com">Bharatseeds@gmail.com</a>
+        <a href="mailto:bharatseeds@gmail.com">bharatseeds@gmail.com</a>
       </div>
       <div class="contact-item reveal reveal-delay-2">
         <div class="contact-icon"><i class="fas fa-phone"></i></div>

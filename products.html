@@ -24,14 +24,26 @@
     </nav>
 
     <div class="header-right">
-      <div class="lang-wrap">
-        <i class="fas fa-globe lang-globe"></i>
-        <select id="languageSelect" class="language-select" aria-label="Language selector">
-          <option value="en">EN</option>
-          <option value="hi">हिंदी</option>
-          <option value="pa">ਪੰਜਾਬੀ</option>
-        </select>
-        <i class="fas fa-chevron-down lang-chevron"></i>
+      <div class="lang-dropdown" id="langDropdown">
+        <button class="lang-trigger" id="langTrigger" type="button" aria-expanded="false" aria-haspopup="listbox">
+          <i class="fas fa-globe"></i>
+          <span id="langCurrent">EN</span>
+          <i class="fas fa-chevron-down lang-chev"></i>
+        </button>
+        <ul class="lang-menu" id="langMenu" role="listbox">
+          <li class="lang-opt active" data-lang="en" role="option">
+            <span class="lang-code">EN</span>
+            <span class="lang-name">English</span>
+          </li>
+          <li class="lang-opt" data-lang="hi" role="option">
+            <span class="lang-code">हि</span>
+            <span class="lang-name">हिंदी</span>
+          </li>
+          <li class="lang-opt" data-lang="pa" role="option">
+            <span class="lang-code">ਪੰ</span>
+            <span class="lang-name">ਪੰਜਾਬੀ</span>
+          </li>
+        </ul>
       </div>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
         <i class="fas fa-bars"></i>
@@ -109,6 +121,23 @@
       <div class="card product-item" data-category="vegetable"><img src="assets/images/products/38.jpeg" alt="Cowpea"><h3 data-en="Cowpea" data-hi="लोबिया" data-pa="ਲੋਬੀਆ">Cowpea</h3></div>
       <div class="card product-item" data-category="vegetable"><img src="assets/images/products/39.jpeg" alt="Zucchini"><h3 data-en="Zucchini" data-hi="तोरी (जुकीनी)" data-pa="ਤੋਰੀ (ਜ਼ੁਕੀਨੀ)">Zucchini</h3></div>
       <div class="card product-item" data-category="vegetable"><img src="assets/images/products/40.jpeg" alt="Snake Cucumber"><h3 data-en="Snake Cucumber" data-hi="साँप ककड़ी" data-pa="ਸੱਪ ਖੀਰਾ">Snake Cucumber</h3></div>
+      
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/69.jpeg" alt="Green Chilli"><h3 data-en="Green Chilli" data-hi="हरी मिर्च" data-pa="ਹਰੀ ਮਿਰਚ">Snake Cucumber</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/70.jpeg" alt="Dark Green Chilli"><h3 data-en="Dark Green Chilli" data-hi="गहरी हरी मिर्च" data-pa="ਗੂੜ੍ਹੀ ਹਰੀ ਮਿਰਚ">Snake Cucumber</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/71.jpeg" alt="Red capsicum"><h3 data-en="Red capsicum" data-hi="लाल शिमला मिर्च" data-pa="ਲਾਲ ਸ਼ਿਮਲਾ ਮਿਰਚ">Snake Cucumber</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/72.jpeg" alt="Yellow capsicum"><h3 data-en="Yellow capsicum" data-hi="पीली शिमला मिर्च" data-pa="ਪੀਲੀ ਸ਼ਿਮਲਾ ਮਿਰਚ">Snake Cucumber</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/73.jpeg" alt="Black capsicum"><h3 data-en="Black capsicum" data-hi="काली शिमला मिर्च" data-pa="ਕਾਲੀ ਸ਼ਿਮਲਾ ਮਿਰਚ">Snake Cucumber</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/74.jpeg" alt="White capsicum"><h3 data-en="White capsicum" data-hi="सफेद शिमला मिर्च" data-pa="ਚਿੱਟੀ ਸ਼ਿਮਲਾ ਮਿਰਚ">Snake Cucumber</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/75.jpeg" alt="Eggplant brinjal"><h3 data-en="Eggplant brinjal" data-hi="बैंगन" data-pa="ਬੈਂਗਣ">Snake Cucumber</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/76.jpeg" alt="Long Brinjal"><h3 data-en="Long Brinjal" data-hi="लंबा बैंगन" data-pa="ਲੰਮਾ ਬੈਂਗਣ">Snake Cucumber</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/77.jpeg" alt="Cucumber"><h3 data-en="Cucumber" data-hi="खीरा" data-pa="ਖੀਰਾ">Snake Cucumber</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/78.jpeg" alt="Chinese Cucumber"><h3 data-en="Chinese Cucumber" data-hi="चीनी खीरा" data-pa="ਚਾਈਨੀਜ਼ ਖੀਰਾ">Snake Cucumber</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/79.jpeg" alt="Yellow carrot"><h3 data-en="Yellow carrot" data-hi="पीली गाजर" data-pa="ਪੀਲੀ ਗਾਜਰ">Snake Cucumber</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/80.jpeg" alt="Yellow Onion"><h3 data-en="Yellow Onion" data-hi="पीला प्याज" data-pa="ਪੀਲੀ ਗਾਜਰ">Snake Cucumber</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/81.jpeg" alt="Yellow Pumpkin"><h3 data-en="Yellow Pumpkin" data-hi="पीला कद्दू" data-pa="ਪੀਲਾ ਕੱਦੂ">Snake Cucumber</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/82.jpeg" alt="Round bottle gourd"><h3 data-en="Round bottle gourd" data-hi="गोल घिया" data-pa="ਗੋਲ ਘੀਆ">Snake Cucumber</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/83.jpeg" alt="Black Beauty Watermelon"><h3 data-en="Black Beauty Watermelon" data-hi="ब्लैक ब्यूटी तरबूज" data-pa="ਬਲੈਕ ਬਿਊਟੀ ਤਰਬੂਜ਼">Snake Cucumber</h3></div>
+      <div class="card product-item" data-category="vegetable"><img src="assets/images/products/84.jpeg" alt="Striped Muskmelon"><h3 data-en="Striped Muskmelon" data-hi="धारीदार खरबूजा" data-pa="ਧਾਰੀਦਾਰ ਖਰਬੂਜ਼ਾ">Snake Cucumber</h3></div>
 
       <!-- FIELD CROP SEEDS -->
       <div class="card product-item" data-category="field"><img src="assets/images/products/41.jpeg" alt="Corn"><h3 data-en="Corn" data-hi="मक्का" data-pa="ਮੱਕੀ">Corn</h3></div>
@@ -162,7 +191,7 @@
       <div class="contact-item">
         <div class="contact-icon"><i class="fas fa-envelope"></i></div>
         <span class="label" data-en="Email" data-hi="ईमेल" data-pa="ਈਮੇਲ">Email</span>
-        <a href="mailto:Bharatseeds@gmail.com">Bharatseeds@gmail.com</a>
+        <a href="mailto:bharatseeds@gmail.com">bharatseeds@gmail.com</a>
       </div>
       <div class="contact-item">
         <div class="contact-icon"><i class="fas fa-phone"></i></div>
