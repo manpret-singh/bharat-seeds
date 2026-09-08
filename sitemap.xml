@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+       <loc>https://bharatseed.com/</loc>
+       <lastmod>2026-07-29T08:12:32+00:00</lastmod>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://bharatseed.com/index.html</loc>
+       <lastmod>2026-07-29T08:12:32+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://bharatseed.com/products.html</loc>
+       <lastmod>2026-07-29T08:12:34+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://bharatseed.com/products.html?category=vegetable</loc>
+       <lastmod>2026-07-29T08:12:34+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://bharatseed.com/products.html?category=field</loc>
+       <lastmod>2026-07-29T08:12:34+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://bharatseed.com/products.html?category=tools</loc>
+       <lastmod>2026-07-29T08:12:34+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://bharatseed.com/products.html?category=mulching</loc>
+       <lastmod>2026-07-29T08:12:34+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://bharatseed.com/products.html?category=sprayers</loc>
+       <lastmod>2026-07-29T08:12:34+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+</urlset>
